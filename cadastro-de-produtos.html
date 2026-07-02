@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Produtos no Portal Único — Commex Tech</title>
+<meta name="description" content="Atributos exigidos por NCM, preenchidos com os dados do produto e validados antes do envio ao Portal Único. Com histórico e versões por SKU.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">commex<span>tech</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="nav-menu" id="navMenu">
+      <div class="menu-item">
+        <a href="solucoes.html">Soluções <i class="caret"></i></a>
+        <div class="mega">
+          <a class="mega-link" href="ncm.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7l9 9-7 7-9-9V4z"/><circle cx="8.5" cy="8.5" r="1.5"/></svg></span><span><b>Classificação NCM com IA</b><small>De 4 horas para 5 minutos por produto</small></span></a>
+          <a class="mega-link" href="cadastro-de-produtos.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v9"/></svg></span><span><b>Cadastro de Produtos</b><small>Atributos validados no Portal Único</small></span></a>
+          <a class="mega-link" href="duimp.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></span><span><b>DUIMP</b><small>Prontidão para o novo processo de importação</small></span></a>
+          <a class="mega-link" href="lpco.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>LPCO</b><small>Licenças e anuências sem perder prazo</small></span></a>
+          <a class="mega-link" href="du-e.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 16 16 8"/><path d="M10 8h6v6"/></svg></span><span><b>DU-E</b><small>Exportação com o mesmo padrão de governança</small></span></a>
+          <a class="mega-link" href="nfe.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2z"/><path d="M9.5 7.5h5M9.5 11.5h5"/></svg></span><span><b>NFe</b><small>Integração fiscal em sincronia com o comex</small></span></a>
+          <a class="mega-link" href="integracoes.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6"/><path d="M8 7H6a5 5 0 0 0 0 10h2"/><path d="M16 7h2a5 5 0 0 1 0 10h-2"/></svg></span><span><b>Integrações ERP</b><small>SAP, TOTVS, Oracle, OSGT e sistemas próprios</small></span></a>
+          <div class="mega-foot"><span style="font-size:12.5px;color:var(--muted)">Plataforma modular — contrate o que a operação pede</span><a href="solucoes.html">Ver todas as soluções →</a></div>
+        </div>
+      </div>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+      <a class="btn btn-primary btn-sm" href="contato.html">Falar com um especialista</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero hero-page">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><a href="solucoes.html">Soluções</a><span class="sep">/</span><b>Cadastro de Produtos</b></div>
+          <h1>Atributos por NCM preenchidos e validados <span class="grad">antes do envio</span></h1>
+          <p class="lead">O Portal Único só acusa o atributo errado depois que o registro entra, muitas vezes com a carga já em desembaraço. O módulo de Cadastro de Produtos levanta o que cada NCM exige, preenche com os dados que o produto já tem e valida tudo antes do envio.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="contato.html">Falar com um especialista <span class="arr">→</span></a>
+            <a class="btn btn-ghost" href="solucoes.html">Conhecer as soluções</a>
+          </div>
+          <p class="hero-note">É a base da plataforma Commex Tech: cadastro de produtos em massa, com IA e trilha de auditoria por SKU.</p>
+        </div>
+        <div class="glass reveal">
+          <div class="glass-head"><b>Atributos do SKU</b><span class="chip ok">Validado</span></div>
+          <div class="glass-body">
+            <div class="row"><span class="lbl">Produto</span><span class="val">Válvula de esfera · aço inox</span></div>
+            <div class="row"><span class="lbl">NCM</span><span class="val">8481.80.95</span></div>
+            <div class="row"><span class="lbl">Atributos exigidos pela NCM</span><span class="val">Identificados automaticamente</span></div>
+            <div class="row"><span class="lbl">Preenchidos e validados</span><span class="val">Completos, sem pendência</span></div>
+            <div class="row"><span class="lbl">Status</span><span class="val">Pronto para envio</span></div>
+          </div>
+          <div class="glass-foot"><span class="tag">Portal Único</span><span class="tag">Histórico de versões</span><span class="tag">Base legal registrada</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- O PROBLEMA -->
+  <section>
+    <div class="container">
+      <div class="sec-head">
+        <span class="eyebrow">O problema</span>
+        <h2>Cada NCM exige um conjunto próprio de <span class="accent">atributos.</span></h2>
+        <p>A lista muda conforme a classificação, e o Portal Único só confere na hora do registro. Quem preenche à mão descobre a inconsistência tarde, já com carga retida.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card reveal">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3.5 6h.01"/><path d="M3.5 12h.01"/><path d="M3.5 18h.01"/></svg></div>
+          <h3>Preenchimento por tentativa e erro</h3>
+          <p>O conjunto de atributos exigido muda conforme a classificação. Sem essa lista levantada por produto, o analista testa o preenchimento direto no Siscomex e conserta um retorno de erro por vez.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Horas de analista e correção tardia</h3>
+          <p>Preencher SKU a SKU consome horas de analista, e o campo errado só aparece no desembaraço. Corrigir nessa fase custa mais do que corrigir no cadastro.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg></div>
+          <h3>Cópias paralelas do catálogo</h3>
+          <p>Cada analista guarda um arquivo, e cada arquivo diverge um pouco. Não existe fonte única para confirmar qual informação vale e de onde ela veio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE O MÓDULO FAZ -->
+  <section class="band-mist">
+    <div class="container">
+      <div class="sec-head">
+        <span class="eyebrow">O que o módulo faz</span>
+        <h2>Levantamento, preenchimento, validação e histórico</h2>
+        <p>O cadastro ganha um fluxo próprio dentro da plataforma. Cada alteração tem responsável identificado e fica gravada no histórico do produto, do primeiro dado ao envio.</p>
+      </div>
+      <div class="grid cols-4">
+        <div class="card reveal">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Identificação automática dos atributos</h3>
+          <p>A partir da NCM de cada produto, o módulo levanta o conjunto exato de atributos que o Portal Único exige. Ninguém precisa consultar tabela item a item.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <h3>Preenchimento a partir dos dados do produto</h3>
+          <p>Descrição, ficha técnica e dados vindos do ERP alimentam os atributos. Seu time para de redigitar informação que já existe no sistema.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Validação pré-envio</h3>
+          <p>O módulo aponta atributo faltante ou inconsistente antes do registro no Portal Único. O analista corrige na própria tela, sem processo aberto e sem carga envolvida.</p>
+        </div>
+        <div class="card reveal d3">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Histórico e versões por produto</h3>
+          <p>Toda alteração entra no histórico do produto, com autor e data. Existe sempre uma versão vigente, e as versões anteriores permanecem disponíveis para auditoria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR DENTRO DO MÓDULO -->
+<section>
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Por dentro do módulo</span>
+      <h2>A tela de cadastro do <span class="accent">produto.</span></h2>
+      <p>O cadastro guiado reúne dados básicos, descrição, anexos e histórico por produto. NCM, código interno e fabricante ou operador entram no mesmo fluxo.</p>
+    </div>
+    <figure class="shot crop-top reveal d1">
+      <img src="assets/img/plataforma-cadastro-produto.png" alt="Tela de cadastro de produto na plataforma Commex Tech com abas de dados básicos, descrição, anexos e histórico" loading="lazy">
+    </figure>
+    <p class="shot-cap reveal d2">Tela real do módulo: cadastro de produto com versão, situação e modalidade.</p>
+  </div>
+</section>
+
+<!-- RESULTADO -->
+  <section class="band-dark">
+    <div class="container">
+      <div class="sec-head">
+        <span class="eyebrow">Resultado</span>
+        <h2>Governança por SKU em <span class="grad">escala.</span></h2>
+        <p>A XCMG Brasil mantém 100 mil produtos classificados na plataforma, com o mesmo controle por item.</p>
+      </div>
+      <ul class="checklist reveal">
+        <li>Erro de atributo resolvido antes do registro no Portal Único, ainda na fase de cadastro.</li>
+        <li>Histórico e versão vigente por produto, com a base legal de cada preenchimento registrada.</li>
+        <li>Rastreabilidade auditável por SKU, pronta para responder a questionamento fiscal.</li>
+        <li>Dados do produto vindos direto do ERP: SAP, TOTVS, Oracle, OSGT e sistemas próprios.</li>
+      </ul>
+      <div class="flow reveal d1">
+        <span class="f">Dados do produto</span><span class="a">→</span>
+        <span class="f">Atributos exigidos pela NCM</span><span class="a">→</span>
+        <span class="f">Validação pré-envio</span><span class="a">→</span>
+        <span class="f hl">Pronto para o Portal Único</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM USA -->
+  <section class="band-mist tight">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Quem usa</span>
+        <h2>O módulo na rotina de um <span class="accent">cliente.</span></h2>
+      </div>
+      <div class="quote reveal d1" style="max-width:760px">
+        <p>“A ferramenta da Commex Tech trouxe muito mais agilidade para nossa rotina. Antes, o cadastro de produtos exigia diversas conferências manuais e acompanhamento em diferentes planilhas. Hoje, conseguimos centralizar as informações, acompanhar o status dos processos e reduzir significativamente o tempo gasto em cada cadastro.”</p>
+        <div class="who"><b>Usuário da plataforma</b>XCMG Brasil</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="sec-head center">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2>Antes de falar com um especialista</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal">
+          <summary>Meu catálogo está bagunçado. Dá para começar mesmo assim?</summary>
+          <p>Esse é o cenário mais comum. O ponto de partida é a NCM de cada produto: com ela, o módulo identifica os atributos exigidos, mostra o que os dados existentes já cobrem e lista o que falta. As pendências saem por lote, começando pelos SKUs com embarque previsto. Ninguém precisa entregar o catálogo inteiro arrumado antes de operar.</p>
+        </details>
+        <details class="reveal d1">
+          <summary>Preciso migrar tudo de uma vez?</summary>
+          <p>Não. Dá para começar pelos itens ativos ou pelas famílias de produto com mais movimentação e ampliar depois. Cada produto validado ganha histórico e versão próprios, então o que já foi tratado permanece intacto quando o restante do catálogo entrar.</p>
+        </details>
+        <details class="reveal d2">
+          <summary>O módulo funciona junto com a Classificação NCM?</summary>
+          <p>Funcionam bem juntos. O Cadastro de Produtos é a base da plataforma; a Classificação NCM é um módulo adicional. A NCM define quais atributos o Portal Único exige, então, quando a classificação também acontece na Commex Tech, o cadastro já parte de uma NCM com score de confiança e base legal registrada.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- VEJA TAMBÉM -->
+  <section class="band-mist tight">
+    <div class="container">
+      <div class="sec-head">
+        <span class="eyebrow">Veja também</span>
+        <h2>Módulos relacionados</h2>
+      </div>
+      <div class="grid cols-3">
+        <a class="card reveal" href="ncm.html">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7l9 9-7 7-9-9V4z"/><circle cx="8.5" cy="8.5" r="1.5"/></svg></div>
+          <h3>Classificação NCM com IA</h3>
+          <p>A NCM define quais atributos o Portal Único exige. A sugestão sai em 5 minutos, com base legal registrada.</p>
+          <span class="go">Ver módulo →</span>
+        </a>
+        <a class="card reveal d1" href="duimp.html">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
+          <h3>DUIMP</h3>
+          <p>A DUIMP utiliza o catálogo validado neste módulo. Os atributos chegam preenchidos ao novo processo de importação.</p>
+          <span class="go">Ver módulo →</span>
+        </a>
+        <a class="card reveal d2" href="integracoes.html">
+          <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6"/><path d="M8 7H6a5 5 0 0 0 0 10h2"/><path d="M16 7h2a5 5 0 0 1 0 10h-2"/></svg></div>
+          <h3>Integrações ERP</h3>
+          <p>API REST, SFTP e OAuth para SAP, TOTVS, Oracle, OSGT e sistemas próprios. Os dados chegam prontos do sistema onde o produto já está cadastrado.</p>
+          <span class="go">Ver módulo →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Valide o catálogo antes que o Portal Único faça isso por você</h2>
+      <p>Diga quantos SKUs ativos a operação tem e qual ERP utiliza, se houver. Um especialista mostra onde o módulo de Cadastro de Produtos entra no seu processo.</p>
+      <div class="hero-ctas" style="justify-content:center">
+        <a class="btn btn-primary" href="contato.html">Falar com um especialista <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="solucoes.html">Conhecer as soluções</a>
+      </div>
+      <p class="note">Suporte em dias úteis, 8h–18h · Treinamento inicial incluso · SLA contratual de 99,5%</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">commex<span>tech</span></a>
+        <p>Automação com IA e rastreabilidade auditável para operações de comércio exterior em escala.</p>
+      </div>
+      <div>
+        <h4>Soluções</h4>
+        <a href="ncm.html">Classificação NCM com IA</a>
+        <a href="cadastro-de-produtos.html">Cadastro de Produtos</a>
+        <a href="duimp.html">DUIMP</a>
+        <a href="lpco.html">LPCO</a>
+        <a href="du-e.html">DU-E</a>
+        <a href="nfe.html">NFe</a>
+        <a href="integracoes.html">Integrações ERP</a>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="solucoes.html">Soluções</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="https://linkedin.com/company/commex-tech/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/commex.tech" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">[e-mail — a definir]</a>
+        <span style="font-size:14px;display:block;padding:5px 0">Joinville/SC · dias úteis, 8h–18h</span>
+      </div>
+    </div>
+    <div class="legal">
+      <span>Commex Tech Consultoria em Tecnologia da Informação LTDA · CNPJ 62.035.177/0001-80 · Joinville/SC</span>
+      <span><a href="#">Política de Privacidade</a> · © <span data-year>2026</span> Commex Tech</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="#" title="Chamar no WhatsApp" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.7.9 3.6 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.9c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9.9.9-4.7-.2-.4c-1-1.6-1.5-3.4-1.5-5.1 0-5.5 4.5-10 10-10s10 4.5 10 10-4.2 10.9-8.7 10.9zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.6 5.6 5 .8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg></a>
+
+</body>
+</html>

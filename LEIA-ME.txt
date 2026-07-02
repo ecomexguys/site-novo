@@ -1,0 +1,35 @@
+SITE INSTITUCIONAL COMMEX TECH — protótipo navegável (v. 02/07/2026)
+=====================================================================
+
+COMO ABRIR
+1. Descompacte o ZIP inteiro (importante: manter a pasta assets/ junto).
+2. Abra o arquivo index.html em qualquer navegador (Chrome, Edge, Safari).
+3. Navegue normalmente — menu, dropdown de Soluções e links funcionam offline.
+   Obs.: as fontes (Space Grotesk/Inter) carregam do Google Fonts; sem internet,
+   o navegador usa uma fonte substituta, sem prejuízo para a avaliação de layout.
+
+PÁGINAS (11)
+- index.html ................. Home
+- sobre.html ................. Sobre nós (missão, visão, valores)
+- solucoes.html .............. Hub de Soluções (+ depoimento completo XCMG)
+- ncm.html ................... Classificação NCM com IA
+- cadastro-de-produtos.html .. Cadastro de Produtos (Portal Único)
+- duimp.html ................. DUIMP
+- lpco.html .................. LPCO
+- du-e.html .................. DU-E
+- nfe.html ................... NFe
+- integracoes.html ........... Integrações ERP
+- contato.html ............... Contato (formulário ainda sem envio — protótipo)
+
+O QUE AINDA É PLACEHOLDER (marcado em blocos tracejados laranja nas páginas)
+- História de fundação e minibios dos sócios (página Sobre)
+- Número de WhatsApp e e-mail oficiais
+- Nome/cargo de quem assina o depoimento institucional da XCMG e logo do cliente
+- Política de Privacidade (link ainda sem destino)
+
+REFERÊNCIAS DE DESIGN
+- Cores oficiais: navy #0A2538 · laranja #EB651E · ardósia #25414F
+- Tipografia: Space Grotesk (títulos) + Inter (corpo)
+- CSS único em assets/css/style.css; interações em assets/js/main.js
+- Screenshots reais da plataforma em assets/img/ (a barra superior do app é
+  cortada via CSS de propósito, para ocultar o usuário logado)
