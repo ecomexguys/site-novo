@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Classificador de NCM — Commex Tech</title>
-<meta name="description" content="Agente especializado em classificação fiscal: sugere a NCM com score de confiança e base legal, e gera a descrição do produto a partir de imagem ou catálogo em PDF.">
+	<title>Extrator de DI — Commex Tech</title>
+<meta name="description" content="O extrator busca as declarações de importação do período, abre cada DI por adição e item e transforma o que já foi declarado em produto no catálogo.">
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -64,7 +64,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="apple-touch-icon" href="assets/img/cropped-FAVICON-180x180.png" />
 <meta name="msapplication-TileImage" content="assets/img/cropped-FAVICON-270x270.png" />
 </head>
-<body class="wp-singular page-template page-template-elementor_header_footer page page-id-116 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-16 elementor-page elementor-page-116">
+<!-- REVISAR: copy rascunhada a partir do modelo das outras paginas de modulo. Validar numeros, funcionamento e enquadramento com o time de produto antes de publicar. Falta tambem a captura de tela do modulo (as demais paginas usam assets/img/<modulo>.png). -->
+<body class="commex-sem-captura wp-singular page-template page-template-elementor_header_footer page page-id-116 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-16 elementor-page elementor-page-116">
 
 <a class="skip-link screen-reader-text" href="#content">Ir para o conteúdo</a>
 
@@ -137,9 +138,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-53043b18 e-con-full e-flex e-con e-child" data-id="53043b18" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-54ed3164 e-con-full e-flex e-con e-child" data-id="54ed3164" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-16836fa elementor-widget elementor-widget-heading" data-id="16836fa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h1 class="elementor-heading-title elementor-size-default">De 4 horas para <span style="color:#FF5905">5 minutos por produto</span>, com a base legal registrada</h1>				</div>
+					<h1 class="elementor-heading-title elementor-size-default">O histórico de importação vira <span style="color:#FF5905">catálogo de produtos</span>, sem redigitação</h1>				</div>
 				<div class="elementor-element elementor-element-4466dcec elementor-widget elementor-widget-text-editor" data-id="4466dcec" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Um SKU novo toma de 3 a 4 horas de pesquisa de um analista sênior. A Commex Tech criou um agente especializado em classificação fiscal de NCM: ele sugere a NCM, mede a confiança de cada sugestão e registra a fundamentação, para o seu especialista revisar apenas os itens de menor confiança.								</div>
+									Cada DI registrada guarda descrição, NCM, exportador e fabricante de itens que a sua empresa já importou. O extrator busca essas declarações por período, abre cada uma adição por adição e leva o que já foi declarado para o catálogo.								</div>
 				<div class="elementor-element elementor-element-346c8ce7 elementor-align-left elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="346c8ce7" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">
 						<span class="elementor-button-content-wrapper">
@@ -150,10 +151,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					</a>
 								</div>
 				</div>
-		<div class="elementor-element elementor-element-2db403b6 e-con-full e-flex e-con e-child" data-id="2db403b6" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-1fa6c071 elementor-widget elementor-widget-image" data-id="1fa6c071" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-															<img fetchpriority="high" decoding="async" width="1008" height="632" src="assets/img/NCM-comex-2.png" class="attachment-full size-full wp-image-121" alt="" srcset="assets/img/NCM-comex-2.png 1008w, assets/img/NCM-comex-2-300x188.png 300w, assets/img/NCM-comex-2-768x482.png 768w" sizes="(max-width: 1008px) 100vw, 1008px" />															</div>
-				</div>
+		
 				</div>
 					</div>
 				</section>
@@ -162,28 +160,28 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-4049653b e-con-full e-flex e-con e-child" data-id="4049653b" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-5a3f55c8 e-con-full e-flex e-con e-child" data-id="5a3f55c8" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-29a70559 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="29a70559" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">O custo da rotina <span style="color:#FF5905">manual.</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">O custo de recomeçar <span style="color:#FF5905">do zero.</span></h2>				</div>
 				<div class="elementor-element elementor-element-69d630b3 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="69d630b3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Na rotina manual, cada SKU novo consome de 3 a 4 horas de um analista<br>sênior entre NCM, TIPI e NESH. Quanto mais itens entram no catálogo, mais<br>tempo da equipe fica alocado em pesquisa.								</div>
+									O dado que falta no cadastro quase sempre já foi declarado alguma vez.<br>Ele só está preso no PDF do despachante, no e-mail e em planilhas<br>paralelas que ninguém consegue manter.								</div>
 				</div>
 		<div class="elementor-element elementor-element-5c2b458 e-con-full e-flex e-con e-child" data-id="5c2b458" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-3b468b14 e-con-full e-flex e-con e-child" data-id="3b468b14" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-5399f54f elementor-widget elementor-widget-heading" data-id="5399f54f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Horas de analista<br>sênior por item</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Histórico de importação<br>fora de alcance</h3>				</div>
 				<div class="elementor-element elementor-element-6b978448 elementor-widget elementor-widget-text-editor" data-id="6b978448" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									São 3 a 4 horas de pesquisa em NCM, TIPI e NESH para cada item novo. Em catálogos que recebem SKUs todo mês, esse tempo pesa na folha de pagamento e no prazo do desembaraço.								</div>
+									As DIs dos últimos anos ficam com o despachante e em arquivos soltos. Consultar declaração por declaração, item a item, não é rotina que uma equipe de comex consiga sustentar.								</div>
 				</div>
 		<div class="elementor-element elementor-element-53558d4c e-con-full e-flex e-con e-child" data-id="53558d4c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-7470cd49 elementor-widget elementor-widget-heading" data-id="7470cd49" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Multa sem provisão<br>no balanço</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Redigitação<br>adição por adição</h3>				</div>
 				<div class="elementor-element elementor-element-3210a29b elementor-widget elementor-widget-text-editor" data-id="3210a29b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Uma classificação incorreta gera multa, retenção na aduana e passivo contábil sem provisão. Em muitas operações, não há registro de quem decidiu cada código nem da fundamentação usada.								</div>
+									Para montar o catálogo, alguém copia de cada declaração a NCM, a descrição, a unidade de medida, o exportador e o fabricante. É trabalho manual que volta a cada novo período.								</div>
 				</div>
 		<div class="elementor-element elementor-element-4fac1990 e-con-full e-flex e-con e-child" data-id="4fac1990" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-4534bd61 elementor-widget elementor-widget-heading" data-id="4534bd61" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Atualização da TIPI reabre<br>o catálogo</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Cadastro que não bate<br>com o declarado</h3>				</div>
 				<div class="elementor-element elementor-element-4e29d767 elementor-widget elementor-widget-text-editor" data-id="4e29d767" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Cada mudança na TIPI ou novo entendimento da Receita obriga a revisar o catálogo item por item, repetindo boa parte da pesquisa já feita.								</div>
+									Quando o dado é redigitado, o produto do catálogo deixa de corresponder ao que foi declarado. A diferença só aparece na conferência ou na fiscalização.								</div>
 				</div>
 				</div>
 				</div>
@@ -196,7 +194,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<div class="elementor-element elementor-element-42991271 elementor-widget elementor-widget-heading" data-id="42991271" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">O que o<br><span style="color:#FF5905">módulo faz</span></h2>				</div>
 				<div class="elementor-element elementor-element-52fd97d6 elementor-widget elementor-widget-text-editor" data-id="52fd97d6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									A plataforma assume a parte braçal da pesquisa em NCM, TIPI e NESH. Para o seu time ficam só os itens em que a experiência do classificador faz diferença.								</div>
+									O extrator assume a busca e a organização das declarações. Para o seu time fica a decisão do que entra no catálogo.								</div>
 				</div>
 		<div class="elementor-element elementor-element-99348db e-con-full e-flex e-con e-child" data-id="99348db" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-5a0f9495 e-con-full e-flex e-con e-child" data-id="5a0f9495" data-element_type="container" data-e-type="container">
@@ -210,9 +208,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 		<div class="elementor-element elementor-element-3a0dc19c e-con-full e-flex e-con e-child" data-id="3a0dc19c" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-5cdd016a elementor-widget elementor-widget-heading" data-id="5cdd016a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Agente especializado em classificação fiscal</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Extração por período e por CNPJ</h3>				</div>
 				<div class="elementor-element elementor-element-7a190c13 elementor-widget elementor-widget-text-editor" data-id="7a190c13" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									O agente foi treinado com milhões de classificações de NCM e analisa descrição, composição e uso do produto antes de propor o código.								</div>
+									Você informa o CNPJ do importador e o intervalo de datas. O extrator consulta as declarações do período e mostra o progresso de cada execução, importação a importação.								</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-1c1775de e-con-full e-flex e-con e-child" data-id="1c1775de" data-element_type="container" data-e-type="container">
@@ -226,9 +224,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 		<div class="elementor-element elementor-element-2a57f1e3 e-con-full e-flex e-con e-child" data-id="2a57f1e3" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-7a6664ba elementor-widget elementor-widget-heading" data-id="7a6664ba" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Score de confiança por item</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Retentativa automática</h3>				</div>
 				<div class="elementor-element elementor-element-754bbde3 elementor-widget elementor-widget-text-editor" data-id="754bbde3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Cada sugestão sai com um score de confiança. Em vez de conferir tudo, o analista revisa apenas os itens abaixo do limiar, e a decisão dele fica registrada.								</div>
+									Se a consulta falhar, o sistema tenta de novo a cada 5 minutos, por até 10 tentativas, e segue reprocessando até concluir as importações pendentes do período.								</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-42c44d44 e-con-full e-flex e-con e-child" data-id="42c44d44" data-element_type="container" data-e-type="container">
@@ -242,9 +240,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 		<div class="elementor-element elementor-element-2ed1a306 e-con-full e-flex e-con e-child" data-id="2ed1a306" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-4881b6f7 elementor-widget elementor-widget-heading" data-id="4881b6f7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Base legal registrada por SKU</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Adição e item destrinchados</h3>				</div>
 				<div class="elementor-element elementor-element-7f64f0e elementor-widget elementor-widget-text-editor" data-id="7f64f0e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Cada código fica registrado com as RGI e NESH aplicadas, o responsável e a data da decisão. O registro fica vinculado ao SKU e disponível para consulta e auditoria.								</div>
+									Cada declaração chega aberta por adição e item, com NCM, descrição, unidade de medida, exportador e fabricante — e com o part number editável antes de catalogar.								</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-67322d02 e-con-full e-flex e-con e-child" data-id="67322d02" data-element_type="container" data-e-type="container">
@@ -258,25 +256,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 		<div class="elementor-element elementor-element-20c477b2 e-con-full e-flex e-con e-child" data-id="20c477b2" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-2f7d70c4 elementor-widget elementor-widget-heading" data-id="2f7d70c4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Reclassificação em lote</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Do extrato ao produto</h3>				</div>
 				<div class="elementor-element elementor-element-6b45be2 elementor-widget elementor-widget-text-editor" data-id="6b45be2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Quando uma parte do catálogo precisa ser reprocessada, a reclassificação em lote refaz o conjunto de uma vez. Cada item mantém o mesmo registro de responsável e fundamentação de uma classificação individual.								</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-67322d02 e-con-full e-flex e-con e-child" data-id="67322d02" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-69cd7f6 e-con-full e-flex e-con e-child" data-id="69cd7f6" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-f9e1b63 elementor-view-default elementor-widget elementor-widget-icon" data-id="f9e1b63" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
-							<div class="elementor-icon-wrapper">
-			<div class="elementor-icon">
-			<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none"><path d="M0 16C0 7.16344 7.16344 0 16 0H59C67.8366 0 75 7.16344 75 16V59C75 67.8366 67.8366 75 59 75H16C7.16344 75 0 67.8366 0 59V16Z" fill="#FF5905"></path><g clip-path="url(#clip0_3831_326)"><path d="M35.7576 53.6835H16.4912V59.659H35.7576V53.6835Z" fill="#F2F2F2"></path><path d="M35.7576 43.8862H16.4912V49.8618H35.7576V43.8862Z" fill="#F2F2F2"></path><path d="M48.8538 52.3341L39.2246 55.0244V60.9999L48.8538 58.3181V60.9999L58.491 58.3181V52.3341L48.8538 55.0244V52.3341Z" fill="#F2F2F2"></path><path d="M48.8538 45.2272V42.5453L39.2246 45.2272V51.2111L48.8538 48.5209V51.2111L58.491 48.5209V42.5453L48.8538 45.2272Z" fill="#F2F2F2"></path><path d="M48.1943 38.8661H58.4912V32.8905H48.1943L57.1156 27.5267L54.2437 22.3474L45.3305 27.7111L50.479 18.4251L45.5075 15.4331L40.3591 24.7275V14H34.6234V24.7275L29.4749 15.4331L24.5035 18.4251L29.6519 27.7111L20.7387 22.3474L17.8668 27.5267L26.7881 32.8905H16.4912V38.8661H26.7881H48.1943Z" fill="#F2F2F2"></path></g><defs><clipPath id="clip0_3831_326"><rect width="42" height="47" fill="white" transform="translate(16.4912 14)"></rect></clipPath></defs></svg>			</div>
-		</div>
-						</div>
-				</div>
-		<div class="elementor-element elementor-element-20c477b2 e-con-full e-flex e-con e-child" data-id="20c477b2" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-2f7d70c4 elementor-widget elementor-widget-heading" data-id="2f7d70c4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Descrição a partir de imagem ou catálogo em PDF</h3>				</div>
-				<div class="elementor-element elementor-element-6b45be2 elementor-widget elementor-widget-text-editor" data-id="6b45be2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Quando o produto chega só com código e foto, a plataforma lê a imagem ou o catálogo do fornecedor em PDF e monta a descrição que alimenta a classificação, em vez de alguém escrever item por item.								</div>
+									Da lista de declarações, os itens selecionados vão para o catálogo: dá para catalogar direto ou gerar o produto com IA, aproveitando a descrição que já foi declarada.								</div>
 				</div>
 				</div>
 				</div>
@@ -288,9 +270,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-4953a3e2 e-con-full e-flex e-con e-child" data-id="4953a3e2" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-6fdfb860 e-con-full e-flex e-con e-child" data-id="6fdfb860" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-1e343f66 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="1e343f66" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Detalhes <span style="color:#FF5905">de classificação</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Declarações <span style="color:#FF5905">abertas por item</span></h2>				</div>
 				<div class="elementor-element elementor-element-16aaedb0 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="16aaedb0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Cada NCM sugerida aparece com justificativa técnica, regras gerais aplicadas<br>(RGI), candidatos alternativos e as abas de auditoria e evidências. Tudo<br>exportável em PDF.								</div>
+									Cada DI aparece com adição, item, NCM, descrição, exportador e fabricante,<br>pronta para virar produto no catálogo ou para alimentar o relatório de DI.								</div>
 				</div>
 				<div class="elementor-element elementor-element-14692d45 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="14692d45" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 										<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -301,8 +283,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					</span>
 					</a>
 								</div>
-				<div class="elementor-element elementor-element-f7c33de elementor-widget elementor-widget-image" data-id="f7c33de" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-															<img decoding="async" width="800" height="392" src="assets/img/NCM2.gif" class="attachment-large size-large wp-image-214" alt="" />															</div>
+				
 				</div>
 					</div>
 				</section>
@@ -311,16 +292,16 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-61479bb9 e-con-full e-flex e-con e-child" data-id="61479bb9" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-3639cd9a e-con-full e-flex e-con e-child" data-id="3639cd9a" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-2d9361c2 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="2d9361c2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">O histórico do catálogo<br><span style="color:#FF5905">fica na empresa.</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">O que já foi declarado<br><span style="color:#FF5905">fica com você.</span></h2>				</div>
 				<div class="elementor-element elementor-element-39097db7 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="39097db7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Tempo por produto medido, risco documentado e um dossiê por SKU que pode ser<br>apresentado à fiscalização, mesmo depois da saída de quem classificou.								</div>
+									Histórico de importação recuperado por período, aberto item a item e disponível<br>para o cadastro de produtos e para os relatórios de DI.								</div>
 				</div>
 		<div class="elementor-element elementor-element-31569981 e-con-full e-flex e-con e-child" data-id="31569981" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 		<div class="elementor-element elementor-element-620cf754 e-con-full e-flex e-con e-child" data-id="620cf754" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-1080a17 elementor-widget elementor-widget-heading" data-id="1080a17" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">5 min</div>				</div>
 				<div class="elementor-element elementor-element-9b7c98a elementor-widget elementor-widget-text-editor" data-id="9b7c98a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									por produto novo, contra as 3–4 horas do processo manual								</div>
+									entre uma tentativa e outra, quando a consulta de uma DI falha								</div>
 				</div>
 		<div class="elementor-element elementor-element-cf96068 e-con-full e-flex e-con e-child" data-id="cf96068" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-3551c58d elementor-widget elementor-widget-heading" data-id="3551c58d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
@@ -330,9 +311,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 		<div class="elementor-element elementor-element-10de81c2 e-con-full e-flex e-con e-child" data-id="10de81c2" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-3cae8578 elementor-widget elementor-widget-heading" data-id="3cae8578" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<div class="elementor-heading-title elementor-size-default">100 mil</div>				</div>
+					<div class="elementor-heading-title elementor-size-default">10 tentativas</div>				</div>
 				<div class="elementor-element elementor-element-48704b14 elementor-widget elementor-widget-text-editor" data-id="48704b14" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									produtos classificados na plataforma para a XCMG Brasil								</div>
+									automáticas por execução antes de o período ser sinalizado como pendente								</div>
 				</div>
 		<div class="elementor-element elementor-element-466230d0 e-con-full e-flex e-con e-child" data-id="466230d0" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-1b7b89e3 elementor-widget elementor-widget-heading" data-id="1b7b89e3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
@@ -357,9 +338,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">O agente substitui o analista fiscal?</a>
+												<a class="elementor-accordion-title" tabindex="0">De onde vêm as declarações?</a>
 					</div>
-					<div id="elementor-tab-content-2611" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-2611"><p>Não. O objetivo é tirar do analista as 3–4 horas de pesquisa por item, não a decisão. O agente pesquisa, sugere a NCM e monta a fundamentação; o score de confiança indica quais casos precisam passar pelo especialista, e é ele quem os valida. Na prática, o analista troca a pesquisa repetitiva pela revisão e pelo compliance da operação.</p></div>
+					<div id="elementor-tab-content-2611" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-2611"><p>Das declarações já registradas pelo CNPJ que você informar, consultadas com o certificado da empresa. Não é preciso subir PDF nem pedir arquivo ao despachante: você define o período e o extrator busca as DIs daquele intervalo.</p></div>
 				</div>
 							<div class="elementor-accordion-item">
 					<div id="elementor-tab-title-2612" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-2612" aria-expanded="false">
@@ -367,9 +348,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">E se a sugestão estiver errada?</a>
+												<a class="elementor-accordion-title" tabindex="0">E se uma DI falhar na consulta?</a>
 					</div>
-					<div id="elementor-tab-content-2612" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-2612"><p>Sugestões com score abaixo do limiar entram na fila de revisão humana antes de valer para a operação. Toda classificação, automática ou revisada, entra no audit log com a fundamentação completa em RGI e NESH. Se um código precisar de correção depois, o histórico mostra o que foi decidido, quando e por quê.</p></div>
+					<div id="elementor-tab-content-2612" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-2612"><p>A execução continua. O sistema repete a consulta a cada 5 minutos, por até 10 tentativas, e a tela mostra o progresso do período: quantas importações já concluíram e quantas seguem aguardando reprocessamento.</p></div>
 				</div>
 							<div class="elementor-accordion-item">
 					<div id="elementor-tab-title-2613" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-2613" aria-expanded="false">
@@ -377,9 +358,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">Funciona para o meu segmento?</a>
+												<a class="elementor-accordion-title" tabindex="0">Os itens da DI viram produto automaticamente?</a>
 					</div>
-					<div id="elementor-tab-content-2613" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-2613"><p>O agente foi treinado em milhões de classificações de NCM e a plataforma atende importadores diretos, indústrias com insumos importados, distribuidores e tradings, de operações grandes a pequenas. Funciona com ou sem ERP: dá para usar a plataforma direto ou integrada ao seu sistema. Na primeira conversa, avaliamos o seu catálogo. Se a plataforma não for a ferramenta certa para a sua operação, dizemos isso de imediato.</p></div>
+					<div id="elementor-tab-content-2613" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-2613"><p>Não sem alguém decidir. Da lista de declarações você seleciona os itens e escolhe catalogar ou gerar o produto com IA. A descrição declarada e a NCM da DI vão junto, e o produto entra no catálogo com a mesma trilha de auditoria dos demais.</p></div>
 				</div>
 								</div>
 						</div>
@@ -391,7 +372,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-13a703b1 e-con-full e-flex e-con e-child" data-id="13a703b1" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-198b2763 e-con-full e-flex e-con e-child" data-id="198b2763" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-5c0ad51c elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="5c0ad51c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Os módulos que recebem<br>a <span style="color:#FF5905">NCM classificada.</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Os módulos que trabalham<br>com <span style="color:#FF5905">o que a DI trouxe.</span></h2>				</div>
 				</div>
 		<div class="elementor-element elementor-element-7c56ac1b e-con-full e-flex e-con e-child" data-id="7c56ac1b" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-385d2156 e-con-full e-flex e-con e-child" data-id="385d2156" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -412,11 +393,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 		<div class="elementor-element elementor-element-7f4f3d65 e-con-full e-flex e-con e-child" data-id="7f4f3d65" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-7c186ef elementor-widget elementor-widget-heading" data-id="7c186ef" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h3 class="elementor-heading-title elementor-size-default">Integrações ERP</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Classificador de NCM</h3>				</div>
 				<div class="elementor-element elementor-element-24ccfc25 elementor-widget elementor-widget-text-editor" data-id="24ccfc25" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									SAP, TOTVS, Oracle, OSGT e sistemas próprios conectados por API REST ou SFTP, com OAuth e ambiente multi-tenant isolado.								</div>
+									Um agente especializado sugere a NCM com score de confiança e base legal, útil quando a DI traz item sem classificação confiável.								</div>
 				<div class="elementor-element elementor-element-57c0bed elementor-widget elementor-widget-heading" data-id="57c0bed" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default"><a href="integracoes.html">Conhecer a base →</a></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default"><a href="ncm.html">Conhecer o módulo →</a></h2>				</div>
 				</div>
 				</div>
 				</div>
@@ -427,9 +408,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-6c47ec1e e-con-full e-flex e-con e-child" data-id="6c47ec1e" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-4c439b30 e-con-full e-flex e-con e-child" data-id="4c439b30" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-78b1488b elementor-widget elementor-widget-heading" data-id="78b1488b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">O próximo SKU do seu catálogo <span style="color:#FF5905">pode levar 5 minutos.</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Quanto do seu catálogo <span style="color:#FF5905">já passou por uma DI?</span></h2>				</div>
 				<div class="elementor-element elementor-element-7b6bb549 elementor-widget elementor-widget-text-editor" data-id="7b6bb549" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									Fale com um especialista e avalie, com o seu próprio catálogo, o que a plataforma resolve e o que não vale a pena automatizar.								</div>
+									Fale com um especialista e avalie, com o seu próprio histórico de importação, quanto do catálogo já pode ser montado a partir do que você declarou.								</div>
 				</div>
 		<div class="elementor-element elementor-element-58d0af81 e-con-full e-flex e-con e-child" data-id="58d0af81" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-16f935a7 elementor-widget elementor-widget-image" data-id="16f935a7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
@@ -499,12 +480,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					<div class="elementor-heading-title elementor-size-default">Joinville/SC · dias úteis, 8h–18h</div>				</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-14e7bfe elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="14e7bfe" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
+				
 		<div class="elementor-element elementor-element-614bd58b e-con-full e-flex e-con e-child" data-id="614bd58b" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-26f4494a e-con-full e-flex e-con e-child" data-id="26f4494a" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-2c635627 elementor-widget elementor-widget-heading" data-id="2c635627" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">

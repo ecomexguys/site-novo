@@ -16,3 +16,15 @@
   .commex-wa{right:16px;bottom:16px;width:52px;height:52px}
   .commex-wa svg{width:29px;height:29px}
 }
+
+/* Páginas de módulo ainda sem captura de tela: o hero ocupa a largura toda,
+   já que não há imagem na coluna da direita. */
+.commex-sem-captura .elementor-element-54ed3164{width:100%!important;max-width:860px}
+@media (max-width:1024px){
+  .commex-sem-captura .elementor-element-54ed3164{max-width:none}
+}
+
+/* A grade de módulos da home centralizava o último card quando eles eram 7
+   (linha incompleta). Com Extrator de DI e Ex-Tarifário são 9 — 3 linhas
+   cheias — e o card final volta a seguir o fluxo normal da grade. */
+.commex-module-grid .commex-module-card:last-child{grid-column:auto!important}
