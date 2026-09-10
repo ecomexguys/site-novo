@@ -28,3 +28,24 @@
    (linha incompleta). Com Extrator de DI e Ex-Tarifário são 9 — 3 linhas
    cheias — e o card final volta a seguir o fluxo normal da grade. */
 .commex-module-grid .commex-module-card:last-child{grid-column:auto!important}
+
+/* Formulário do RD Station no lugar da foto do CTA final (mesmo formulário
+   usado nas LPs). O fundo dessas seções é branco, então o form ganha o
+   mesmo cartão com borda dos cards de módulo. */
+.commex-rd-form{
+  width:100%;max-width:520px;
+  background:#fff;border:1px solid #E4E9EC;border-radius:16px;
+  box-shadow:0 8px 24px rgba(10,37,56,.10);
+  padding:28px;box-sizing:border-box;
+}
+.commex-rd-form form{margin:0;text-align:left}
+.commex-rd-form button,
+.commex-rd-form input[type=submit]{text-align:center}
+.commex-rd-form input[type=text],
+.commex-rd-form input[type=email],
+.commex-rd-form input[type=tel],
+.commex-rd-form select,
+.commex-rd-form textarea{width:100%;box-sizing:border-box}
+@media (max-width:767px){
+  .commex-rd-form{max-width:none;padding:20px}
+}

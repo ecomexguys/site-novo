@@ -45,6 +45,10 @@ WordPress), `build_modules.py` (gera as páginas de módulo novas a partir de `n
 
 - `extrator-di.html` e `ex-tarifario.html` têm a copy marcada com `<!-- REVISAR -->` no topo e
   ainda não têm captura de tela do módulo (as demais páginas usam `assets/img/<modulo>.png`).
-- Política de Privacidade: o link do rodapé continua sem destino, como no site do designer.
+- Política de Privacidade: o link do rodapé continua sem destino, como no site do designer —
+  e o formulário do RD referencia essa política no texto de consentimento.
+- O formulário do CTA é o mesmo do RD Station usado nas LPs (`lps/Commex Tech LP v4 RD Station.html`),
+  id `lp-catalogo-produtos-2710b9dd7eace4d68d95`. Todas as páginas usam o mesmo formulário, então
+  no RD as conversões chegam sem distinguir a página de origem.
 - Em telas estreitas o layout estoura horizontalmente — o mesmo acontece no site do designer,
   então é um ajuste a fazer no CSS do Elementor.
