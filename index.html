@@ -1,352 +1,1268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Commex Tech — Governança para o comércio exterior</title>
-<meta name="description" content="Plataforma de governança para comércio exterior: cadastro de produtos em massa, classificação NCM por agente especializado e integração ERP, do catálogo à declaração.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/main.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Commex Tech — Governança e automação para o comércio exterior</title>
+<meta name="description" content="Plataforma de governança para comércio exterior: cadastro de produtos em massa, classificação NCM por agente especializado e integração com o Portal Único.">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='assets/css/hello-reset.css' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='assets/css/hello-theme.css' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='assets/css/hello-header-footer.css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='assets/css/elementor-frontend.min.css' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+.e-form-textarea-base:not([data-resizable]) { resize: none; } .e-form-submit-button-base { cursor: pointer; box-sizing: border-box; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-16-css' href='assets/css/post-16.css' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='assets/css/elementor-widget-image.min.css' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='assets/css/pro-widget-nav-menu.min.css' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='assets/css/pro-sticky.min.css' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='assets/css/elementor-widget-heading.min.css' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='assets/css/elementor-widget-divider.min.css' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='assets/css/elementor-widget-icon-list.min.css' media='all' />
+<link rel='stylesheet' id='dct-testimonials-slider-css' href='assets/css/testimonials-slider.css' media='all' />
+<link rel='stylesheet' id='elementor-post-13-css' href='assets/css/post-13.css' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='assets/css/base-desktop.css' media='all' />
+<link rel='stylesheet' id='base-mobile-css' href='assets/css/base-mobile.css' media='(max-width:767px)' />
+<link rel='stylesheet' id='elementor-post-261-css' href='assets/css/post-261.css' media='all' />
+<link rel='stylesheet' id='elementor-post-288-css' href='assets/css/post-288.css' media='all' />
+<link rel='stylesheet' id='elementor-gf-roboto-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=auto' media='all' />
+<link rel='stylesheet' id='elementor-gf-robotoslab-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=auto' media='all' />
+<link rel='stylesheet' id='elementor-gf-inter-css' href='https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=auto' media='all' />
+<script id="jquery-core-js" src="assets/js/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="assets/js/jquery-migrate.min.js"></script>
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="assets/img/cropped-FAVICON-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/cropped-FAVICON-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="assets/img/cropped-FAVICON-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/cropped-FAVICON-270x270.png" />
 </head>
-<body>
+<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-13 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-16 elementor-page elementor-page-13">
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">commex<span>tech</span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-    <nav class="nav-menu" id="navMenu">
-      <div class="menu-item">
-        <a href="solucoes.html">Soluções <i class="caret"></i></a>
-        <div class="mega">
-          <a class="mega-link" href="ncm.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7l9 9-7 7-9-9V4z"/><circle cx="8.5" cy="8.5" r="1.5"/></svg></span><span><b>Classificação Fiscal NCM</b><small>De 4 horas para 5 minutos por produto</small></span></a>
-          <a class="mega-link" href="cadastro-de-produtos.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v9"/></svg></span><span><b>Cadastro de Produtos</b><small>Atributos validados no Portal Único</small></span></a>
-          <a class="mega-link" href="duimp.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></span><span><b>DUIMP</b><small>Prontidão para o novo processo de importação</small></span></a>
-          <a class="mega-link" href="lpco.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>LPCO</b><small>Licenças e anuências sem perder prazo</small></span></a>
-          <a class="mega-link" href="du-e.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 16 16 8"/><path d="M10 8h6v6"/></svg></span><span><b>DU-E</b><small>Exportação com o mesmo padrão de governança</small></span></a>
-          <a class="mega-link" href="nfe.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2z"/><path d="M9.5 7.5h5M9.5 11.5h5"/></svg></span><span><b>NFe</b><small>Integração fiscal em sincronia com o comex</small></span></a>
-          <a class="mega-link" href="integracoes.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6"/><path d="M8 7H6a5 5 0 0 0 0 10h2"/><path d="M16 7h2a5 5 0 0 1 0 10h-2"/></svg></span><span><b>Integrações ERP</b><small>SAP, TOTVS, Oracle, OSGT e sistemas próprios</small></span></a>
-          <div class="mega-foot"><span style="font-size:12.5px;color:var(--muted)">Plataforma modular: contrate só o que a operação pede</span><a href="solucoes.html">Ver todas as soluções →</a></div>
-        </div>
-      </div>
-      <a href="sobre.html">Sobre nós</a>
-      <a href="contato.html">Contato</a>
-      <a class="btn btn-primary btn-sm" href="contato.html">Falar com um especialista</a>
-    </nav>
-  </div>
-</header>
+<a class="skip-link screen-reader-text" href="#content">Ir para o conteúdo</a>
 
-<main>
+		<header data-elementor-type="header" data-elementor-id="261" class="elementor elementor-261 elementor-location-header" data-elementor-post-type="elementor_library">
+			<header class="elementor-element elementor-element-4142ab73 e-flex e-con-boxed e-con e-parent" data-id="4142ab73" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-62e94775 e-con-full e-flex e-con e-child" data-id="62e94775" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-63793621 e-con-full e-flex e-con e-child" data-id="63793621" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-28edce0b elementor-widget elementor-widget-image" data-id="28edce0b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img width="305" height="34" src="assets/img/Commex-Tech.svg" class="attachment-full size-full wp-image-263" alt="" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-7af0783a e-con-full e-flex e-con e-child" data-id="7af0783a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-230fde95 elementor-nav-menu__align-center elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="230fde95" data-element_type="widget" data-e-type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg aria-hidden=\&quot;true\&quot; class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-230fde95" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-265"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="sobre.html" class="elementor-item">Sobre nós</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-267"><a class="elementor-item">Soluções</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="cadastro-de-produtos.html" class="elementor-sub-item">Catálogo de produtos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274"><a href="ncm.html" class="elementor-sub-item">Classificador de NCM</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="duimp.html" class="elementor-sub-item">DUIMP</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="du-e.html" class="elementor-sub-item">DU-E</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="integracoes.html" class="elementor-sub-item">Integração ERP</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="lpco.html" class="elementor-sub-item">LPCO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="nfe.html" class="elementor-sub-item">NFe</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a href="contato.html" class="elementor-item">Fale Conosco</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-230fde95" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-265"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="sobre.html" class="elementor-item" tabindex="-1">Sobre nós</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-267"><a class="elementor-item" tabindex="-1">Soluções</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="cadastro-de-produtos.html" class="elementor-sub-item" tabindex="-1">Catálogo de produtos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274"><a href="ncm.html" class="elementor-sub-item" tabindex="-1">Classificador de NCM</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="duimp.html" class="elementor-sub-item" tabindex="-1">DUIMP</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="du-e.html" class="elementor-sub-item" tabindex="-1">DU-E</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="integracoes.html" class="elementor-sub-item" tabindex="-1">Integração ERP</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="lpco.html" class="elementor-sub-item" tabindex="-1">LPCO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="nfe.html" class="elementor-sub-item" tabindex="-1">NFe</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a href="contato.html" class="elementor-item" tabindex="-1">Fale Conosco</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-749b7960 e-con-full e-flex e-con e-child" data-id="749b7960" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-575684f1 elementor-align-right elementor-tablet-align-right elementor-mobile-align-center elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="575684f1" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Fale com um especialista</span>
+					</span>
+					</a>
+								</div>
+				</div>
+				</div>
+					</div>
+				</header>
+				</header>
+				<div data-elementor-type="wp-page" data-elementor-id="13" class="elementor elementor-13" data-elementor-post-type="page">
+				<section class="elementor-element elementor-element-40298873 commex-section commex-hero commex-bg-substituir e-con-full e-flex e-con e-parent" data-id="40298873" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-31270845 e-flex e-con-boxed e-con e-child" data-id="31270845" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-566f1ca e-flex e-con-boxed e-con e-child" data-id="566f1ca" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-747dbb14 elementor-widget elementor-widget-heading" data-id="747dbb14" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">Governança e automação<br>para o comércio exterior<br>em escala.</h1>				</div>
+				<div class="elementor-element elementor-element-2fa5f40a elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="2fa5f40a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									A Commex Tech classifica NCM com um agente especializado em classificação fiscal, cadastra produtos no Portal Único e guarda o registro de cada decisão, do autor à base legal.								</div>
+		<div class="elementor-element elementor-element-1b3bb8f1 e-flex e-con-boxed e-con e-child" data-id="1b3bb8f1" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-51813bdc elementor-widget elementor-widget-button" data-id="51813bdc" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Falar com um especialista</span>
+					</span>
+					</a>
+								</div>
+				<div class="elementor-element elementor-element-2287cc34 elementor-widget elementor-widget-button" data-id="2287cc34" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="#commex-section-commex-modules">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Conhecer as soluções</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-29d9264b commex-section commex-problems e-con-full e-flex e-con e-parent" data-id="29d9264b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-365494e0 e-flex e-con-boxed e-con e-child" data-id="365494e0" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4d1d212d elementor-widget elementor-widget-heading" data-id="4d1d212d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Operação de comex em escala<br>não se governa em <span style="color:#FE4B0B">planilha.</span></h2>				</div>
+				<div class="elementor-element elementor-element-13773b8a elementor-widget elementor-widget-text-editor" data-id="13773b8a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Quando o catálogo cresce, cada etapa vira um ponto de erro e de retrabalho.<br>Boa parte desse custo não aparece em relatório nenhum.								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-55c2aef4 commex-problem-grid e-grid e-con-full e-con e-child" data-id="55c2aef4" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-58affa40 commex-problem-card e-flex e-con-boxed e-con e-child" data-id="58affa40" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-6ba34e32 elementor-view-default elementor-widget elementor-widget-icon" data-id="6ba34e32" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M6.57333 22.3342H5.96889C3.32444 22.3342 1.13333 20.2186 1.13333 17.5666V5.90086C1.13333 3.25641 3.32444 1.1333 5.97644 1.1333H17.7404C20.3924 1.1333 22.5836 3.25641 22.5836 5.90086V6.32397C25.976 6.32397 27.9933 8.12975 27.9933 11.6582C30.6756 11.6582 32.8667 13.7435 32.8667 16.4257V28.0537C32.8667 30.7057 30.7133 32.8591 28.0613 32.8591H16.184C13.5698 32.8591 11.4164 30.7057 11.4164 28.0537V27.4871C8.65867 27.2377 6.57333 25.6813 6.57333 22.7497V22.3342ZM26.1876 11.6657V11.0991C26.1876 9.43686 24.8124 8.12975 23.1804 8.12975H11.3787C9.71644 8.12975 8.34133 9.43686 8.34133 11.0991V22.7573C8.34133 24.6689 9.64844 25.5151 11.4164 25.6889V16.4333C11.4164 13.8191 13.5698 11.6657 16.184 11.6657H26.1876ZM28.0613 13.4337H16.184C14.5596 13.4337 13.2147 14.7786 13.2147 16.4409V28.0689C13.2147 29.7311 14.5596 31.076 16.184 31.076H28.0538C29.716 31.076 31.0609 29.7311 31.0609 28.0689V16.4333C31.0609 14.7711 29.7236 13.4337 28.0613 13.4337ZM20.7778 6.33152V5.90841C20.7778 4.24619 19.4027 2.93908 17.7404 2.93908H5.97644C4.31422 2.93908 2.93911 4.24619 2.93911 5.90841V17.5666C2.93911 19.2289 4.31422 20.536 5.97644 20.536H6.58089V11.0991C6.58089 8.44708 8.772 6.33152 11.3862 6.33152H20.7778Z" fill="black"></path></svg>			</div>
+		</div>
+						</div>
+				<div class="elementor-element elementor-element-2fb549e0 elementor-widget elementor-widget-heading" data-id="2fb549e0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">O catálogo cresce mais<br>rápido que o time</h3>				</div>
+				<div class="elementor-element elementor-element-5ea0a336 elementor-widget elementor-widget-text-editor" data-id="5ea0a336" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Cada produto novo exige classificação e atributos antes de entrar no Portal Único.<br><br>A fila anda no ritmo de quem sabe fazer.								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fe34cab commex-problem-card e-flex e-con-boxed e-con e-child" data-id="fe34cab" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7841ba44 elementor-view-default elementor-widget elementor-widget-icon" data-id="7841ba44" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 34 30" fill="none"><g clip-path="url(#clip0_3809_86)"><path d="M30.0156 30H3.98436C1.78748 30 0 28.1647 0 25.9091C0 25.1431 0.207685 24.396 0.600642 23.7486L13.6195 1.92476C14.3531 0.719485 15.6167 0 16.9998 0C18.3828 0 19.6464 0.719485 20.38 1.92476L20.3865 1.9355L33.3994 23.7491C33.7923 24.397 34 25.1436 34 25.9096C34 28.1652 32.2125 30.0005 30.0156 30.0005V30ZM15.8747 3.36578L2.85628 25.1881C2.7253 25.4034 2.65607 25.6524 2.65607 25.9086C2.65607 26.6603 3.25173 27.2724 3.98436 27.2724H30.0156C30.7478 27.2724 31.3439 26.6608 31.3439 25.9086C31.3439 25.6524 31.2747 25.4029 31.1437 25.1881L31.1372 25.1774L18.1248 3.36578C17.8793 2.96589 17.4589 2.72709 16.9998 2.72709C16.5406 2.72709 16.1197 2.96589 15.8747 3.36578Z" fill="black"></path><path d="M18.328 23.1815C18.328 23.9348 17.7334 24.5453 16.9997 24.5453C16.2661 24.5453 15.6714 23.9348 15.6714 23.1815C15.6714 22.4283 16.2661 21.8177 16.9997 21.8177C17.7334 21.8177 18.328 22.4283 18.328 23.1815Z" fill="black"></path><path d="M18.328 8.18176H15.6719V19.0906H18.328V8.18176Z" fill="black"></path></g><defs><clipPath id="clip0_3809_86"><rect width="34" height="30" fill="white"></rect></clipPath></defs></svg>			</div>
+		</div>
+						</div>
+				<div class="elementor-element elementor-element-77322109 elementor-widget elementor-widget-heading" data-id="77322109" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Cada exigência trava<br>o despacho</h3>				</div>
+				<div class="elementor-element elementor-element-5b25bf48 elementor-widget elementor-widget-text-editor" data-id="5b25bf48" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									NCM errada, atributo faltando no cadastro ou licença fora do prazo: qualquer pendência retém a carga no canal e gera multa.								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4cd14126 commex-problem-card e-flex e-con-boxed e-con e-child" data-id="4cd14126" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7459ef5d elementor-view-default elementor-widget elementor-widget-icon" data-id="7459ef5d" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><g clip-path="url(#clip0_3809_94)"><path d="M29.6573 8.26041L21.6888 0.291855C21.505 0.107977 21.2503 0 20.9844 0H7.03906C5.39132 0 4.05078 1.34054 4.05078 2.98828V31.0117C4.05078 32.6595 5.39132 34 7.03906 34H26.9609C28.6087 34 29.9492 32.6595 29.9492 31.0117V8.96484C29.9492 8.69377 29.834 8.43698 29.6573 8.26041ZM21.9805 3.40086L26.5484 7.96875H22.9766C22.4273 7.96875 21.9805 7.5219 21.9805 6.97266V3.40086ZM26.9609 32.0078H7.03906C6.48982 32.0078 6.04297 31.561 6.04297 31.0117V2.98828C6.04297 2.43904 6.48982 1.99219 7.03906 1.99219H19.9883V6.97266C19.9883 8.62039 21.3288 9.96094 22.9766 9.96094H27.957V31.0117C27.957 31.561 27.5102 32.0078 26.9609 32.0078Z" fill="black"></path><path d="M22.9766 14.0781H11.0234C10.4733 14.0781 10.0273 14.5241 10.0273 15.0742V27.0273C10.0273 27.5775 10.4733 28.0234 11.0234 28.0234H22.9766C23.5267 28.0234 23.9727 27.5775 23.9727 27.0273V15.0742C23.9727 14.5241 23.5267 14.0781 22.9766 14.0781ZM12.0195 20.0547H16.0039V22.0469H12.0195V20.0547ZM17.9961 20.0547H21.9805V22.0469H17.9961V20.0547ZM21.9805 18.0625H17.9961V16.0703H21.9805V18.0625ZM16.0039 16.0703V18.0625H12.0195V16.0703H16.0039ZM12.0195 24.0391H16.0039V26.0312H12.0195V24.0391ZM17.9961 26.0312V24.0391H21.9805V26.0312H17.9961Z" fill="black"></path></g><defs><clipPath id="clip0_3809_94"><rect width="34" height="34" fill="white"></rect></clipPath></defs></svg>			</div>
+		</div>
+						</div>
+				<div class="elementor-element elementor-element-347d5a09 elementor-widget elementor-widget-heading" data-id="347d5a09" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Conhecimento em planilha<br>e na memória</h3>				</div>
+				<div class="elementor-element elementor-element-5ff63d34 elementor-widget elementor-widget-text-editor" data-id="5ff63d34" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									O critério e o histórico moram numa pessoa e em arquivos paralelos que divergem. Quem sai leva junto o que sabia.								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-531d2b57 commex-problem-card e-flex e-con-boxed e-con e-child" data-id="531d2b57" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-15308885 elementor-view-default elementor-widget elementor-widget-icon" data-id="15308885" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M28.6113 16.3175L24.6747 15.5788C24.5539 15.5542 24.4295 15.5539 24.3086 15.5779C24.1877 15.6019 24.0728 15.6497 23.9705 15.7185C23.8682 15.7873 23.7807 15.8757 23.7129 15.9786C23.6452 16.0816 23.5985 16.197 23.5758 16.3181C23.553 16.4392 23.5545 16.5637 23.5803 16.6842C23.6061 16.8047 23.6556 16.9189 23.7259 17.0202C23.7962 17.1214 23.8859 17.2076 23.9898 17.2739C24.0938 17.3401 24.2099 17.385 24.3313 17.406L27.51 18.0026V19.9973L24.3318 20.5935C24.1598 20.6257 24.0003 20.7058 23.8718 20.8247C23.7433 20.9436 23.651 21.0963 23.6055 21.2653C23.4116 21.9863 23.1253 22.6791 22.7537 23.3266C22.6662 23.4783 22.6234 23.6516 22.6302 23.8266C22.637 24.0015 22.6931 24.171 22.792 24.3155L24.6165 26.9822L23.2059 28.3929L20.5388 26.5678C20.3942 26.4689 20.2247 26.4128 20.0496 26.406C19.8746 26.3992 19.7012 26.442 19.5494 26.5294C18.9023 26.9015 18.2096 27.188 17.4888 27.3819C17.3199 27.4274 17.1673 27.5197 17.0485 27.6481C16.9298 27.7765 16.8497 27.9358 16.8175 28.1077L16.2209 31.2859H14.226L13.6299 28.1085C13.5977 27.9365 13.5177 27.7771 13.3989 27.6486C13.2802 27.5201 13.1275 27.4278 12.9586 27.3822C12.2375 27.1885 11.5447 26.9019 10.8974 26.5298C10.7456 26.4423 10.5722 26.3994 10.3971 26.4061C10.2221 26.4129 10.0525 26.4689 9.90787 26.5678L7.241 28.3925L5.83085 26.9822L7.65537 24.3153C7.75429 24.1708 7.81036 24.0012 7.81715 23.8262C7.82393 23.6512 7.78115 23.4778 7.69373 23.326C7.32172 22.6789 7.03538 21.9862 6.84187 21.2653C6.79638 21.0963 6.70408 20.9436 6.57557 20.8247C6.44707 20.7058 6.28761 20.6257 6.11554 20.5935L2.9375 19.9973V18.0026L6.11618 17.406C6.2881 17.3737 6.44742 17.2935 6.57582 17.1747C6.70421 17.0559 6.79647 16.9033 6.84197 16.7344C7.03543 16.0137 7.32179 15.3211 7.69383 14.6742C7.78126 14.5224 7.82404 14.3491 7.81726 14.174C7.81047 13.999 7.75439 13.8294 7.65548 13.6849L5.83085 11.018L7.24148 9.60737L9.90835 11.432C10.0528 11.5309 10.2223 11.587 10.3972 11.5938C10.5722 11.6006 10.7455 11.5578 10.8972 11.4704C11.5447 11.0988 12.2375 10.8125 12.9584 10.6186C13.1274 10.573 13.2801 10.4806 13.3989 10.352C13.5177 10.2235 13.5978 10.064 13.6299 9.89191L14.226 6.71376H16.2208L16.8174 9.89239C16.84 10.0124 16.8859 10.1268 16.9527 10.229C17.0194 10.3312 17.1057 10.4193 17.2065 10.4882C17.41 10.6274 17.6605 10.68 17.9029 10.6344C18.0229 10.6119 18.1372 10.5659 18.2395 10.4992C18.3417 10.4324 18.4298 10.3462 18.4987 10.2454C18.5676 10.1446 18.616 10.0312 18.6411 9.91174C18.6662 9.79225 18.6675 9.66898 18.6449 9.54899L17.9062 5.61243C17.8661 5.39938 17.7529 5.20702 17.586 5.06862C17.4192 4.93022 17.2092 4.85448 16.9924 4.85449H13.4546C13.2377 4.8545 13.0277 4.93032 12.8609 5.06882C12.694 5.20733 12.5808 5.39981 12.5409 5.61296L11.9069 8.99346C11.4213 9.15347 10.9481 9.3489 10.4911 9.57815L7.6542 7.63681C7.4753 7.51417 7.25912 7.45803 7.04315 7.47812C6.82719 7.4982 6.62507 7.59325 6.47185 7.74678L3.9702 10.2484C3.81686 10.4018 3.72193 10.6039 3.70185 10.8198C3.68177 11.0357 3.73779 11.2518 3.86023 11.4308L5.80131 14.2678C5.57222 14.7247 5.37681 15.1977 5.21662 15.683L1.83611 16.3175C1.62305 16.3576 1.43068 16.4708 1.29227 16.6377C1.15386 16.8045 1.07811 17.0145 1.07813 17.2313V20.769C1.07813 20.9858 1.15395 21.1959 1.29246 21.3627C1.43096 21.5296 1.62344 21.6428 1.83659 21.6827L5.21656 22.3167C5.37676 22.8023 5.57218 23.2754 5.80126 23.7325L3.86044 26.5694C3.73802 26.7484 3.68201 26.9645 3.70209 27.1804C3.72217 27.3963 3.81708 27.5984 3.97041 27.7517L6.47207 30.2533C6.62541 30.4066 6.8275 30.5015 7.04339 30.5216C7.25929 30.5417 7.47542 30.4857 7.65442 30.3634L10.4912 28.4219C10.9483 28.6509 11.4215 28.8463 11.907 29.0066L12.541 32.3866C12.5809 32.5997 12.6941 32.7922 12.8609 32.9307C13.0278 33.0693 13.2378 33.1451 13.4547 33.1451H16.9924C17.2092 33.1451 17.4192 33.0694 17.586 32.9309C17.7529 32.7925 17.8661 32.6002 17.9062 32.3871L18.5406 29.0066C19.0258 28.8462 19.4987 28.6508 19.9557 28.4219L22.793 30.3628C22.972 30.4851 23.1881 30.5411 23.404 30.521C23.6199 30.5009 23.822 30.406 23.9753 30.2528L26.477 27.7511C26.6303 27.5978 26.7252 27.3957 26.7453 27.1798C26.7654 26.9639 26.7094 26.7478 26.5869 26.5688L24.6456 23.7319C24.8749 23.2749 25.0703 22.8017 25.2303 22.3162L28.6108 21.6822C28.8239 21.6422 29.0164 21.529 29.1549 21.3622C29.2934 21.1953 29.3693 20.9853 29.3693 20.7684V17.2311C29.3692 17.0144 29.2935 16.8044 29.1551 16.6376C29.0167 16.4708 28.8243 16.3576 28.6113 16.3175Z" fill="black"></path><path d="M9.22742 18.9997C9.22741 20.1857 9.57908 21.345 10.238 22.3311C10.8968 23.3172 11.8333 24.0858 12.929 24.5396C14.0247 24.9935 15.2304 25.1122 16.3936 24.8809C17.5567 24.6495 18.6252 24.0784 19.4638 23.2398C20.3024 22.4012 20.8735 21.3327 21.1049 20.1696C21.3362 19.0064 21.2175 17.8007 20.7636 16.705C20.3098 15.6093 19.5412 14.6728 18.5551 14.014C17.569 13.3551 16.4097 13.0034 15.2237 13.0034C13.6339 13.0052 12.1098 13.6376 10.9857 14.7617C9.86156 15.8858 9.22923 17.4099 9.22742 18.9997ZM19.3606 18.9997C19.3607 19.8179 19.118 20.6177 18.6635 21.2981C18.2089 21.9784 17.5628 22.5086 16.8069 22.8218C16.0509 23.1349 15.2191 23.2168 14.4166 23.0572C13.6141 22.8976 12.877 22.5036 12.2984 21.925C11.7199 21.3465 11.3259 20.6093 11.1662 19.8068C11.0066 19.0044 11.0885 18.1725 11.4016 17.4166C11.7148 16.6607 12.245 16.0146 12.9253 15.56C13.6056 15.1054 14.4055 14.8628 15.2237 14.8628C16.3205 14.864 17.372 15.3002 18.1476 16.0758C18.9232 16.8514 19.3594 17.9029 19.3606 18.9997Z" fill="black"></path><path d="M26.5667 1.25476C25.2719 1.25475 24.0063 1.63867 22.9298 2.35798C21.8532 3.07728 21.0142 4.09966 20.5187 5.29583C20.0232 6.492 19.8936 7.80823 20.1462 9.07807C20.3988 10.3479 21.0222 11.5144 21.9377 12.4299C22.8532 13.3454 24.0197 13.9688 25.2895 14.2214C26.5594 14.474 27.8756 14.3444 29.0718 13.8489C30.2679 13.3534 31.2903 12.5144 32.0096 11.4378C32.7289 10.3613 33.1128 9.09565 33.1128 7.80093C33.1109 6.06536 32.4206 4.40142 31.1934 3.17419C29.9662 1.94695 28.3022 1.25666 26.5667 1.25476ZM26.5667 12.4878C25.6397 12.4878 24.7335 12.2129 23.9628 11.6979C23.192 11.1829 22.5913 10.451 22.2365 9.59454C21.8818 8.73814 21.789 7.79577 21.9698 6.8866C22.1506 5.97744 22.597 5.14232 23.2525 4.48685C23.908 3.83137 24.7431 3.38499 25.6522 3.20414C26.5614 3.0233 27.5038 3.11611 28.3602 3.47084C29.2166 3.82558 29.9486 4.4263 30.4636 5.19705C30.9786 5.9678 31.2535 6.87396 31.2535 7.80093C31.252 9.0435 30.7577 10.2347 29.8791 11.1134C29.0005 11.992 27.8092 12.4863 26.5667 12.4878Z" fill="black"></path><path d="M26.4513 4.1794C26.1696 4.20663 25.9102 4.34467 25.7302 4.56315C25.5502 4.78163 25.4643 5.06266 25.4915 5.34443L25.7295 7.80635C25.7493 8.01128 25.8448 8.20148 25.9972 8.33987C26.1496 8.47827 26.3482 8.55494 26.554 8.55494C26.7599 8.55494 26.9584 8.47827 27.1109 8.33987C27.2633 8.20148 27.3587 8.01128 27.3786 7.80635L27.6165 5.34443C27.6227 5.27611 27.6227 5.20737 27.6165 5.13905C27.5893 4.85728 27.4512 4.59788 27.2327 4.41791C27.0142 4.23794 26.7331 4.15215 26.4513 4.1794Z" fill="black"></path><path d="M26.5667 9.11353C26.3201 9.11353 26.0836 9.21147 25.9093 9.38582C25.7349 9.56018 25.637 9.79664 25.637 10.0432V10.1204C25.637 10.367 25.7349 10.6034 25.9093 10.7778C26.0836 10.9521 26.3201 11.0501 26.5667 11.0501C26.8132 11.0501 27.0497 10.9521 27.224 10.7778C27.3984 10.6034 27.4963 10.367 27.4963 10.1204V10.0431C27.4963 9.79656 27.3983 9.56011 27.224 9.38579C27.0497 9.21146 26.8132 9.11353 26.5667 9.11353Z" fill="black"></path></svg>			</div>
+		</div>
+						</div>
+				<div class="elementor-element elementor-element-2b123ca6 elementor-widget elementor-widget-heading" data-id="2b123ca6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Sem rastro, a fiscalização<br>vira risco</h3>				</div>
+				<div class="elementor-element elementor-element-2f8b58ba elementor-widget elementor-widget-text-editor" data-id="2f8b58ba" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Sem registro de quem decidiu cada NCM e com qual base legal, auditoria interna e Receita passam a ser exposição, não rotina.								</div>
+					</div>
+				</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-75161425 commex-section commex-less-sheets commex-bg-substituir e-con-full e-flex e-con e-parent" data-id="75161425" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-b41025a e-flex e-con-boxed e-con e-child" data-id="b41025a" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-41729203 e-flex e-con-boxed e-con e-child" data-id="41729203" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7e1fa52d elementor-widget elementor-widget-heading" data-id="7e1fa52d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Menos planilhas.<br>Mais controle sobre<br>sua operação.</h2>				</div>
+				<div class="elementor-element elementor-element-35f2f095 elementor-widget elementor-widget-text-editor" data-id="35f2f095" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Automatize a gestão do catálogo de produtos, reduza retrabalho e acelere as etapas do comércio exterior com uma plataforma desenvolvida para operações em escala.								</div>
+				<div class="elementor-element elementor-element-4d4fa481 elementor-widget elementor-widget-button" data-id="4d4fa481" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Falar com um especialista</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7eecbc2e e-con-full e-flex e-con e-child" data-id="7eecbc2e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2d9a3879 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="2d9a3879" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img fetchpriority="high" decoding="async" width="1202" height="627" src="assets/img/ia-para-comex.png" class="attachment-full size-full wp-image-24" alt="" srcset="assets/img/ia-para-comex.png 1202w, assets/img/ia-para-comex-300x156.png 300w, assets/img/ia-para-comex-1024x534.png 1024w, assets/img/ia-para-comex-768x401.png 768w" sizes="(max-width: 1202px) 100vw, 1202px" />															</div>
+				</div>
+					</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-7101f660 commex-section-commex-modules e-con-full e-flex e-con e-parent" data-id="7101f660" data-element_type="container" data-e-type="container" id="commex-section-commex-modules" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-11335436 e-flex e-con-boxed e-con e-child" data-id="11335436" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7d6635b elementor-widget elementor-widget-heading" data-id="7d6635b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Do catálogo no seu ERP até o <span style="color:#FE4B0B">Portal Único.</span></h2>				</div>
+				<div class="elementor-element elementor-element-4cb8fe4 elementor-widget elementor-widget-text-editor" data-id="4cb8fe4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									A base da plataforma é o Cadastro de Produtos: cadastro em massa, com IA e trilha de auditoria.<br>Classificação Fiscal NCM, Integrações ERP, DUIMP, LPCO, DU-E e NFe entram como módulos adicionais, contratados à parte conforme a operação precisa.								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-3c741938 commex-module-grid e-grid e-con-full e-con e-child" data-id="3c741938" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-305d81c3 commex-module-card e-flex e-con-boxed e-con e-child" data-id="305d81c3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2b072363 elementor-widget elementor-widget-heading" data-id="2b072363" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Cadastro de Produtos</h3>				</div>
+				<div class="elementor-element elementor-element-18d2318a elementor-widget elementor-widget-text-editor" data-id="18d2318a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>O catálogo que sustenta toda a operação: cadastro de produtos em massa, atributos do Portal Único validados antes do envio e trilha de auditoria por SKU. Os outros seis módulos se somam a essa base.</p>								</div>
+				<div class="elementor-element elementor-element-baca54a elementor-widget elementor-widget-heading" data-id="baca54a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="cadastro-de-produtos.html">Conhecer a base →</a></h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-581775de commex-module-card e-flex e-con-boxed e-con e-child" data-id="581775de" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5be4001c elementor-widget elementor-widget-heading" data-id="5be4001c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Classificação Fiscal NCM</h3>				</div>
+				<div class="elementor-element elementor-element-48e0a1c5 elementor-widget elementor-widget-text-editor" data-id="48e0a1c5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Um agente especializado sugere a NCM com score de confiança e base legal. De 3–4 horas para 5 minutos por produto.								</div>
+				<div class="elementor-element elementor-element-dde8f86 elementor-widget elementor-widget-heading" data-id="dde8f86" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="ncm.html">Conhecer o módulo  →</a></h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1cf52e73 commex-module-card e-flex e-con-boxed e-con e-child" data-id="1cf52e73" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4cf93285 elementor-widget elementor-widget-heading" data-id="4cf93285" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">DUIMP</h3>				</div>
+				<div class="elementor-element elementor-element-31668d95 elementor-widget elementor-widget-text-editor" data-id="31668d95" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Na DUIMP, um atributo obrigatório em aberto trava o registro. O módulo mede quanto do seu catálogo já atende às exigências e organiza o preenchimento do que falta.								</div>
+				<div class="elementor-element elementor-element-c9d3688 elementor-widget elementor-widget-heading" data-id="c9d3688" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="duimp.html">Conhecer o módulo  →</a></h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6c4a903 commex-module-card e-flex e-con-boxed e-con e-child" data-id="6c4a903" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e3c3680 elementor-widget elementor-widget-heading" data-id="e3c3680" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">LPCO</h3>				</div>
+				<div class="elementor-element elementor-element-4f65bc3c elementor-widget elementor-widget-text-editor" data-id="4f65bc3c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Licenças e anuências acompanhadas dentro do fluxo, com o prazo de cada órgão anuente visível para o time inteiro.								</div>
+				<div class="elementor-element elementor-element-097e0f0 elementor-widget elementor-widget-heading" data-id="097e0f0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="lpco.html">Conhecer a base →</a></h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-38b7c56c commex-module-card e-flex e-con-boxed e-con e-child" data-id="38b7c56c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-73e652cb elementor-widget elementor-widget-heading" data-id="73e652cb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">DU-E</h3>				</div>
+				<div class="elementor-element elementor-element-4e70131 elementor-widget elementor-widget-text-editor" data-id="4e70131" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Dados do ERP direto para a DU-E, com o histórico de cada envio registrado.								</div>
+				<div class="elementor-element elementor-element-56878e2 elementor-widget elementor-widget-heading" data-id="56878e2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="du-e.html">Conhecer a base →</a></h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5c889bb5 commex-module-card e-flex e-con-boxed e-con e-child" data-id="5c889bb5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-47388458 elementor-widget elementor-widget-heading" data-id="47388458" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">NFe</h3>				</div>
+				<div class="elementor-element elementor-element-6c44a51 elementor-widget elementor-widget-text-editor" data-id="6c44a51" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Integração fiscal alinhada à operação de comex. Os dados da nota ficam consistentes com o que foi declarado, sem divergência entre sistemas.								</div>
+				<div class="elementor-element elementor-element-02752e8 elementor-widget elementor-widget-heading" data-id="02752e8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="nfe.html">Conhecer a base →</a></h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-137adef3 commex-module-card e-flex e-con-boxed e-con e-child" data-id="137adef3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7fe32ddc elementor-widget elementor-widget-heading" data-id="7fe32ddc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Integrações ERP</h3>				</div>
+				<div class="elementor-element elementor-element-3ac54eff elementor-widget elementor-widget-text-editor" data-id="3ac54eff" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									SAP, TOTVS, Oracle, OSGT e sistemas próprios conectados por API REST ou SFTP, com OAuth e ambiente multi-tenant isolado.								</div>
+				<div class="elementor-element elementor-element-7856c35 elementor-widget elementor-widget-heading" data-id="7856c35" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="integracoes.html">Conhecer a base →</a></h2>				</div>
+					</div>
+				</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-30619740 commex-section commex-flow e-con-full e-flex e-con e-parent" data-id="30619740" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-328d1a0 e-flex e-con-boxed e-con e-child" data-id="328d1a0" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-18ae7839 e-flex e-con-boxed e-con e-child" data-id="18ae7839" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-dcf700b elementor-widget elementor-widget-heading" data-id="dcf700b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Do catálogo à<br>declaração,<br><span style="color:#FE4B0B">num fluxo só</span></h2>				</div>
+				<div class="elementor-element elementor-element-81c4e01 elementor-widget elementor-widget-text-editor" data-id="81c4e01" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									A plataforma trabalha sobre o catálogo que você já tem, direto no navegador ou puxado do ERP. Ninguém troca de sistema nem redigita produto.								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-633e5224 e-flex e-con-boxed e-con e-child" data-id="633e5224" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4c2fbdea e-flex e-con-boxed e-con e-child" data-id="4c2fbdea" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1ea57214 elementor-widget elementor-widget-heading" data-id="1ea57214" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">1</div>				</div>
+		<div class="elementor-element elementor-element-31d1b8e5 e-flex e-con-boxed e-con e-child" data-id="31d1b8e5" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1eca29d5 elementor-widget elementor-widget-heading" data-id="1eca29d5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Centralize o catálogo</h3>				</div>
+				<div class="elementor-element elementor-element-2bf50ba1 elementor-widget elementor-widget-text-editor" data-id="2bf50ba1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Cadastro de produtos em massa na plataforma, direto ou integrado ao ERP (SAP, TOTVS, Oracle, OSGT). O catálogo passa a ter uma versão única e auditável.								</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5e3f53ed e-flex e-con-boxed e-con e-child" data-id="5e3f53ed" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-51925b80 elementor-widget elementor-widget-heading" data-id="51925b80" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">2</div>				</div>
+		<div class="elementor-element elementor-element-206f8a96 e-flex e-con-boxed e-con e-child" data-id="206f8a96" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-675c9a5e elementor-widget elementor-widget-heading" data-id="675c9a5e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Classifique e complete</h3>				</div>
+				<div class="elementor-element elementor-element-7dbe2e2 elementor-widget elementor-widget-text-editor" data-id="7dbe2e2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									O agente especializado sugere a NCM com score de confiança e base legal, e a plataforma monta e valida os atributos que o Portal Único exige.								</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6352cc5b e-flex e-con-boxed e-con e-child" data-id="6352cc5b" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3491e19e elementor-widget elementor-widget-heading" data-id="3491e19e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">3</div>				</div>
+		<div class="elementor-element elementor-element-3c141b91 e-flex e-con-boxed e-con e-child" data-id="3c141b91" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3a5e73cc elementor-widget elementor-widget-heading" data-id="3a5e73cc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Declare com rastro</h3>				</div>
+				<div class="elementor-element elementor-element-5d88e26 elementor-widget elementor-widget-text-editor" data-id="5d88e26" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Seu time revisa só o que o score aponta e envia ao Portal Único. Cada decisão fica registrada com autor, data e base legal.								</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6260260e commex-timeline-html-wrapper e-con-full e-flex e-con e-child" data-id="6260260e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6ea3e949 elementor-widget elementor-widget-html" data-id="6ea3e949" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<div class="commex-process-timeline" role="list" aria-label="Etapas do processo"><div class="commex-process-track" aria-hidden="true"><span class="commex-process-progress"></span></div><div class="commex-process-items"><div class="commex-process-item" role="listitem" style="--step:0"><span class="commex-process-marker">1</span><strong>Catálogo</strong></div><div class="commex-process-item" role="listitem" style="--step:1"><span class="commex-process-marker">2</span><strong>Classificação<br>(agente)</strong></div><div class="commex-process-item" role="listitem" style="--step:2"><span class="commex-process-marker">3</span><strong>Atributos</strong></div><div class="commex-process-item" role="listitem" style="--step:3"><span class="commex-process-marker">4</span><strong>Validação</strong></div><div class="commex-process-item" role="listitem" style="--step:4"><span class="commex-process-marker">5</span><strong>Portal Único</strong></div><div class="commex-process-item" role="listitem" style="--step:5"><span class="commex-process-marker">6</span><strong>Trilha auditável</strong></div></div></div><style>.commex-process-timeline{--commex-orange:#FE4B0B;--commex-ink:#102B3A;--commex-muted:#F1F2F3;--commex-line:#E2E5E7;position:relative;width:100%;padding:0 0 4px;font-family:inherit}.commex-process-items{position:relative;z-index:2;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:start}.commex-process-item{display:flex;min-width:0;flex-direction:column;align-items:center;gap:26px;text-align:center;color:var(--commex-ink)}.commex-process-item strong{display:block;min-height:38px;font-size:14px;line-height:1.25;font-weight:700}.commex-process-marker{display:inline-flex;width:42px;height:42px;align-items:center;justify-content:center;border-radius:50%;background:var(--commex-muted);color:var(--commex-ink);font-size:14px;font-weight:700;box-shadow:0 0 0 7px #FFFFFF;animation:commexStepActive 12s linear infinite;animation-delay:calc(var(--step) * 2s)}.commex-process-track{position:absolute;z-index:1;top:20px;left:8.333%;right:8.333%;height:2px;overflow:visible;background:var(--commex-line)}.commex-process-progress{position:absolute;inset:0 auto 0 0;width:0;background:var(--commex-orange);animation:commexTrackFill 12s linear infinite}.commex-process-progress:after{content:"";position:absolute;top:50%;right:0;width:10px;height:10px;border-radius:50%;background:var(--commex-orange);transform:translate(50%,-50%);box-shadow:0 0 0 4px rgba(254,75,11,.16)}@keyframes commexTrackFill{0%{width:0}91.66%{width:100%}100%{width:100%}}@keyframes commexStepActive{0%,16.5%{background:var(--commex-orange);color:#FFFFFF;transform:scale(1.05)}16.6%,100%{background:var(--commex-muted);color:var(--commex-ink);transform:scale(1)}}@media(max-width:767px){.commex-process-timeline{padding-left:0}.commex-process-items{display:flex;flex-direction:column;gap:24px}.commex-process-item{display:grid;grid-template-columns:48px 1fr;align-items:center;gap:16px;text-align:left}.commex-process-item strong{min-height:0;font-size:15px}.commex-process-marker{width:40px;height:40px;box-shadow:0 0 0 6px #FFFFFF}.commex-process-track{top:20px;bottom:20px;left:19px;right:auto;width:2px;height:auto}.commex-process-progress{inset:0 0 auto 0;width:2px;height:0;animation-name:commexTrackFillMobile}.commex-process-progress:after{top:auto;right:50%;bottom:0;transform:translate(50%,50%)}@keyframes commexTrackFillMobile{0%{height:0}91.66%{height:100%}100%{height:100%}}}@media(prefers-reduced-motion:reduce){.commex-process-marker,.commex-process-progress{animation:none}.commex-process-item:first-child .commex-process-marker{background:var(--commex-orange);color:#FFFFFF}.commex-process-progress{width:0}.commex-process-progress:after{display:none}}</style>				</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-160a4329 commex-section commex-growth-banner commex-bg-substituir e-con-full e-flex e-con e-parent" data-id="160a4329" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-3ad6953b commex-growth-content-wrapper e-con-full e-flex e-con e-child" data-id="3ad6953b" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-6c45032f commex-growth-content e-flex e-con-boxed e-con e-child" data-id="6c45032f" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5b3baf2d elementor-widget elementor-widget-heading" data-id="5b3baf2d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Sua operação cresceu.<br>Seus processos<br>acompanharam?</h2>				</div>
+				<div class="elementor-element elementor-element-1f010774 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="1f010774" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Elimine gargalos na classificação fiscal, padronize informações e conecte o cadastro de produtos à declaração em um fluxo único e seguro.								</div>
+				<div class="elementor-element elementor-element-c718d5e elementor-widget elementor-widget-button" data-id="c718d5e" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Falar com um especialista</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-2e05b93 commex-section commex-platform e-con-full e-flex e-con e-parent" data-id="2e05b93" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-48e283fd e-flex e-con-boxed e-con e-child" data-id="48e283fd" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-52645d6b e-flex e-con-boxed e-con e-child" data-id="52645d6b" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-503a4fab elementor-widget elementor-widget-heading" data-id="503a4fab" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><span style="color:#FF5905">Te entregamos<br>uma plataforma,</span><br>e não mais<br>uma ferramenta.</h2>				</div>
+				<div class="elementor-element elementor-element-701eb227 elementor-widget elementor-widget-text-editor" data-id="701eb227" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>Ferramenta isolada resolve uma etapa e cria mais uma planilha para conciliar. A Commex Tech cobre o caminho do catálogo à declaração e registra cada decisão para responder à fiscalização.</p>								</div>
+				<div class="elementor-element elementor-element-74242caf elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="74242caf" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none"><path d="M0 16C0 7.16344 7.16344 0 16 0H59C67.8366 0 75 7.16344 75 16V59C75 67.8366 67.8366 75 59 75H16C7.16344 75 0 67.8366 0 59V16Z" fill="#FF5905"></path><g clip-path="url(#clip0_3831_326)"><path d="M35.7576 53.6835H16.4912V59.659H35.7576V53.6835Z" fill="#F2F2F2"></path><path d="M35.7576 43.8862H16.4912V49.8618H35.7576V43.8862Z" fill="#F2F2F2"></path><path d="M48.8538 52.3341L39.2246 55.0244V60.9999L48.8538 58.3181V60.9999L58.491 58.3181V52.3341L48.8538 55.0244V52.3341Z" fill="#F2F2F2"></path><path d="M48.8538 45.2272V42.5453L39.2246 45.2272V51.2111L48.8538 48.5209V51.2111L58.491 48.5209V42.5453L48.8538 45.2272Z" fill="#F2F2F2"></path><path d="M48.1943 38.8661H58.4912V32.8905H48.1943L57.1156 27.5267L54.2437 22.3474L45.3305 27.7111L50.479 18.4251L45.5075 15.4331L40.3591 24.7275V14H34.6234V24.7275L29.4749 15.4331L24.5035 18.4251L29.6519 27.7111L20.7387 22.3474L17.8668 27.5267L26.7881 32.8905H16.4912V38.8661H26.7881H48.1943Z" fill="#F2F2F2"></path></g><defs><clipPath id="clip0_3831_326"><rect width="42" height="47" fill="white" transform="translate(16.4912 14)"></rect></clipPath></defs></svg>						</span>
+										<span class="elementor-icon-list-text">Um fluxo só, do catálogo ao Portal Único, em vez de uma ferramenta por etapa</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none"><path d="M0 16C0 7.16344 7.16344 0 16 0H59C67.8366 0 75 7.16344 75 16V59C75 67.8366 67.8366 75 59 75H16C7.16344 75 0 67.8366 0 59V16Z" fill="#FF5905"></path><g clip-path="url(#clip0_3831_326)"><path d="M35.7576 53.6835H16.4912V59.659H35.7576V53.6835Z" fill="#F2F2F2"></path><path d="M35.7576 43.8862H16.4912V49.8618H35.7576V43.8862Z" fill="#F2F2F2"></path><path d="M48.8538 52.3341L39.2246 55.0244V60.9999L48.8538 58.3181V60.9999L58.491 58.3181V52.3341L48.8538 55.0244V52.3341Z" fill="#F2F2F2"></path><path d="M48.8538 45.2272V42.5453L39.2246 45.2272V51.2111L48.8538 48.5209V51.2111L58.491 48.5209V42.5453L48.8538 45.2272Z" fill="#F2F2F2"></path><path d="M48.1943 38.8661H58.4912V32.8905H48.1943L57.1156 27.5267L54.2437 22.3474L45.3305 27.7111L50.479 18.4251L45.5075 15.4331L40.3591 24.7275V14H34.6234V24.7275L29.4749 15.4331L24.5035 18.4251L29.6519 27.7111L20.7387 22.3474L17.8668 27.5267L26.7881 32.8905H16.4912V38.8661H26.7881H48.1943Z" fill="#F2F2F2"></path></g><defs><clipPath id="clip0_3831_326"><rect width="42" height="47" fill="white" transform="translate(16.4912 14)"></rect></clipPath></defs></svg>						</span>
+										<span class="elementor-icon-list-text">Agente especializado de NCM, treinado em milhões de classificações (não um lookup de tabela)</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none"><path d="M0 16C0 7.16344 7.16344 0 16 0H59C67.8366 0 75 7.16344 75 16V59C75 67.8366 67.8366 75 59 75H16C7.16344 75 0 67.8366 0 59V16Z" fill="#FF5905"></path><g clip-path="url(#clip0_3831_326)"><path d="M35.7576 53.6835H16.4912V59.659H35.7576V53.6835Z" fill="#F2F2F2"></path><path d="M35.7576 43.8862H16.4912V49.8618H35.7576V43.8862Z" fill="#F2F2F2"></path><path d="M48.8538 52.3341L39.2246 55.0244V60.9999L48.8538 58.3181V60.9999L58.491 58.3181V52.3341L48.8538 55.0244V52.3341Z" fill="#F2F2F2"></path><path d="M48.8538 45.2272V42.5453L39.2246 45.2272V51.2111L48.8538 48.5209V51.2111L58.491 48.5209V42.5453L48.8538 45.2272Z" fill="#F2F2F2"></path><path d="M48.1943 38.8661H58.4912V32.8905H48.1943L57.1156 27.5267L54.2437 22.3474L45.3305 27.7111L50.479 18.4251L45.5075 15.4331L40.3591 24.7275V14H34.6234V24.7275L29.4749 15.4331L24.5035 18.4251L29.6519 27.7111L20.7387 22.3474L17.8668 27.5267L26.7881 32.8905H16.4912V38.8661H26.7881H48.1943Z" fill="#F2F2F2"></path></g><defs><clipPath id="clip0_3831_326"><rect width="42" height="47" fill="white" transform="translate(16.4912 14)"></rect></clipPath></defs></svg>						</span>
+										<span class="elementor-icon-list-text">Integração nativa com o ERP que já roda na sua empresa</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none"><path d="M0 16C0 7.16344 7.16344 0 16 0H59C67.8366 0 75 7.16344 75 16V59C75 67.8366 67.8366 75 59 75H16C7.16344 75 0 67.8366 0 59V16Z" fill="#FF5905"></path><g clip-path="url(#clip0_3831_326)"><path d="M35.7576 53.6835H16.4912V59.659H35.7576V53.6835Z" fill="#F2F2F2"></path><path d="M35.7576 43.8862H16.4912V49.8618H35.7576V43.8862Z" fill="#F2F2F2"></path><path d="M48.8538 52.3341L39.2246 55.0244V60.9999L48.8538 58.3181V60.9999L58.491 58.3181V52.3341L48.8538 55.0244V52.3341Z" fill="#F2F2F2"></path><path d="M48.8538 45.2272V42.5453L39.2246 45.2272V51.2111L48.8538 48.5209V51.2111L58.491 48.5209V42.5453L48.8538 45.2272Z" fill="#F2F2F2"></path><path d="M48.1943 38.8661H58.4912V32.8905H48.1943L57.1156 27.5267L54.2437 22.3474L45.3305 27.7111L50.479 18.4251L45.5075 15.4331L40.3591 24.7275V14H34.6234V24.7275L29.4749 15.4331L24.5035 18.4251L29.6519 27.7111L20.7387 22.3474L17.8668 27.5267L26.7881 32.8905H16.4912V38.8661H26.7881H48.1943Z" fill="#F2F2F2"></path></g><defs><clipPath id="clip0_3831_326"><rect width="42" height="47" fill="white" transform="translate(16.4912 14)"></rect></clipPath></defs></svg>						</span>
+										<span class="elementor-icon-list-text">Rastreabilidade auditável por SKU: autor, data e base legal de cada decisão</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none"><path d="M0 16C0 7.16344 7.16344 0 16 0H59C67.8366 0 75 7.16344 75 16V59C75 67.8366 67.8366 75 59 75H16C7.16344 75 0 67.8366 0 59V16Z" fill="#FF5905"></path><g clip-path="url(#clip0_3831_326)"><path d="M35.7576 53.6835H16.4912V59.659H35.7576V53.6835Z" fill="#F2F2F2"></path><path d="M35.7576 43.8862H16.4912V49.8618H35.7576V43.8862Z" fill="#F2F2F2"></path><path d="M48.8538 52.3341L39.2246 55.0244V60.9999L48.8538 58.3181V60.9999L58.491 58.3181V52.3341L48.8538 55.0244V52.3341Z" fill="#F2F2F2"></path><path d="M48.8538 45.2272V42.5453L39.2246 45.2272V51.2111L48.8538 48.5209V51.2111L58.491 48.5209V42.5453L48.8538 45.2272Z" fill="#F2F2F2"></path><path d="M48.1943 38.8661H58.4912V32.8905H48.1943L57.1156 27.5267L54.2437 22.3474L45.3305 27.7111L50.479 18.4251L45.5075 15.4331L40.3591 24.7275V14H34.6234V24.7275L29.4749 15.4331L24.5035 18.4251L29.6519 27.7111L20.7387 22.3474L17.8668 27.5267L26.7881 32.8905H16.4912V38.8661H26.7881H48.1943Z" fill="#F2F2F2"></path></g><defs><clipPath id="clip0_3831_326"><rect width="42" height="47" fill="white" transform="translate(16.4912 14)"></rect></clipPath></defs></svg>						</span>
+										<span class="elementor-icon-list-text">Suporte próximo, em dias úteis, com treinamento inicial incluso</span>
+									</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-34678cce e-flex e-con-boxed e-con e-child" data-id="34678cce" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-bd1440f elementor-widget elementor-widget-html" data-id="bd1440f" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- Cole todo este código em um único widget HTML do Elementor -->
+<style>
+INÍCIO DO CSS DO COMPONENTE
+       ========================================================== */
+    .lp-attr-flow {
+      --ct-petroleum-50: #f2f5f7;
+      --ct-petroleum-900: #0a2538;
+      --ct-orange-50: #fef3ec;
+      --ct-orange-400: #ef7a2d;
+      --ct-orange-500: #eb651e;
+      --ct-bg-canvas: #f5f7f9;
+      --ct-border-subtle: #dce2e7;
+      --ct-border-default: #c2cbd2;
+      --ct-fg-2: #182c37;
+      --ct-fg-3: #5f6c76;
+      --ct-font-display: "Exo 2", "Kallisto", "Saira", system-ui, sans-serif;
+      --ct-font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --ct-font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
 
-<!-- HERO -->
-<div class="hero hero-home on-dark">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <span class="eyebrow">Tecnologia para comércio exterior</span>
-        <h1>Governança e automação para o comércio exterior em <span class="grad">escala.</span></h1>
-        <p class="lead">A Commex Tech classifica NCM com um agente especializado em classificação fiscal, cadastra produtos no Portal Único e guarda o registro de cada decisão, do autor à base legal.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="contato.html">Falar com um especialista <span class="arr">→</span></a>
-          <a class="btn btn-ghost" href="solucoes.html">Conhecer as soluções</a>
-        </div>
-      </div>
-      <div>
-        <div class="glass reveal d1">
-          <div class="glass-head"><b>Classificação em andamento</b><span class="chip ok">Agente + revisão humana</span></div>
-          <div class="glass-body">
-            <div class="row"><span class="lbl">Bomba hidráulica de engrenagens</span><span class="val">8413.60.11 · score alto</span></div>
-            <div class="row"><span class="lbl">Rolamento de rolos cônicos</span><span class="val">8482.20.10 · score alto</span></div>
-            <div class="row"><span class="lbl">Válvula solenoide 24V</span><span class="val">8481.80.92 · score alto</span></div>
-            <div class="row"><span class="lbl">Painel de comando com CLP</span><span class="val">em revisão humana</span></div>
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      width: 100%;
+      color: var(--ct-petroleum-900);
+      font-family: var(--ct-font-body);
+      box-sizing: border-box;
+    }
+
+    .lp-attr-flow *,
+    .lp-attr-flow *::before,
+    .lp-attr-flow *::after {
+      box-sizing: border-box;
+    }
+
+    .lp-attr-flow p {
+      line-height: normal;
+    }
+
+    .lp-attr-stage {
+      background: #fff;
+      border: 1px solid var(--ct-border-default);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.6) inset,
+        0 24px 48px -28px rgba(10, 37, 56, 0.18),
+        0 8px 16px -8px rgba(10, 37, 56, 0.08);
+      transition: border-color 480ms ease, box-shadow 480ms ease, transform 480ms ease;
+    }
+
+    .lp-attr-stage.done {
+      border-color: rgba(15, 76, 117, 0.28);
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.6) inset,
+        0 32px 56px -28px rgba(15, 76, 117, 0.22),
+        0 0 0 4px rgba(15, 76, 117, 0.04);
+    }
+
+    .lp-attr-stage-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .lp-attr-step {
+      flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--ct-petroleum-50);
+      color: var(--ct-petroleum-900);
+      display: grid;
+      place-items: center;
+      font-family: var(--ct-font-mono);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .lp-attr-stage-title {
+      font-family: var(--ct-font-display);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--ct-petroleum-900);
+      margin: 0 0 2px;
+      letter-spacing: -0.01em;
+    }
+
+    .lp-attr-stage-sub {
+      font-size: 13px;
+      color: var(--ct-fg-2);
+      margin: 0;
+    }
+
+    .lp-attr-input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .lp-attr-field {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 14px;
+      align-items: baseline;
+      padding: 10px 14px;
+      background: var(--ct-bg-canvas);
+      border: 1px solid var(--ct-border-subtle);
+      border-radius: 10px;
+    }
+
+    .lp-attr-field .lab {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ct-fg-3);
+    }
+
+    .lp-attr-field .val {
+      font-size: 14px;
+      color: var(--ct-petroleum-900);
+      font-weight: 500;
+    }
+
+    .lp-attr-field .val.mono {
+      font-family: var(--ct-font-mono);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .lp-attr-pipe {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 14px;
+      padding: 0 24px;
+      min-height: 56px;
+    }
+
+    .lp-attr-pipe-line {
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        rgba(15, 76, 117, 0.12) 0%,
+        rgba(15, 76, 117, 0.28) 50%,
+        rgba(15, 76, 117, 0.12) 100%
+      );
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lp-attr-pipe.active .lp-attr-pipe-line::after,
+    .lp-attr-pipe.done .lp-attr-pipe-line::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--ct-orange-400) 50%,
+        transparent 100%
+      );
+      animation: lpAttrPulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes lpAttrPulse {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    .lp-attr-pipe-node {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      background: #fff;
+      border: 1px solid var(--ct-border-default);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ct-petroleum-900);
+      box-shadow:
+        0 8px 20px -8px rgba(10, 37, 56, 0.18),
+        0 0 0 4px rgba(255, 255, 255, 0.6);
+      transition: border-color 360ms ease, box-shadow 360ms ease;
+      white-space: nowrap;
+    }
+
+    .lp-attr-pipe-node i {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--ct-orange-50);
+      color: var(--ct-orange-500);
+      transition: transform 360ms ease;
+      font-style: normal;
+    }
+
+    .lp-attr-pipe-node i svg,
+    .lp-attr-row-check svg {
+      display: block;
+      width: 12px;
+      height: 12px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .lp-attr-pipe-node i svg {
+      fill: currentColor;
+      stroke: none;
+      width: 11px;
+      height: 11px;
+    }
+
+    .lp-attr-pipe.active .lp-attr-pipe-node {
+      border-color: var(--ct-orange-400);
+      box-shadow:
+        0 12px 28px -8px rgba(224, 122, 26, 0.32),
+        0 0 0 4px rgba(240, 140, 46, 0.12);
+    }
+
+    .lp-attr-pipe.active .lp-attr-pipe-node i {
+      background: var(--ct-orange-400);
+      color: #fff;
+      animation: lpAttrSpin 1.2s linear infinite;
+    }
+
+    .lp-attr-pipe.done .lp-attr-pipe-node {
+      border-color: rgba(15, 76, 117, 0.28);
+    }
+
+    .lp-attr-pipe.done .lp-attr-pipe-node i {
+      background: var(--ct-petroleum-900);
+      color: #fff;
+    }
+
+    @keyframes lpAttrSpin {
+      to { transform: rotate(360deg); }
+    }
+
+    .lp-attr-output-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 280px;
+    }
+
+    .lp-attr-row {
+      display: grid;
+      grid-template-columns: 28px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 10px 14px;
+      background: var(--ct-bg-canvas);
+      border: 1px solid var(--ct-border-subtle);
+      border-radius: 10px;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 320ms ease, transform 320ms ease, background 320ms ease, border-color 320ms ease;
+    }
+
+    .lp-attr-row.visible {
+      opacity: 1;
+      transform: translateY(0);
+      background: #fff;
+      border-color: rgba(15, 76, 117, 0.18);
+    }
+
+    .lp-attr-row-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(15, 76, 117, 0.08);
+      color: var(--ct-petroleum-900);
+      display: grid;
+      place-items: center;
+      transition: background 280ms ease, color 280ms ease;
+    }
+
+    .lp-attr-row.visible .lp-attr-row-check {
+      background: var(--ct-petroleum-900);
+      color: #fff;
+    }
+
+    .lp-attr-row-body {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      min-width: 0;
+    }
+
+    .lp-attr-row-body .k {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ct-fg-3);
+    }
+
+    .lp-attr-row-body .v {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ct-petroleum-900);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .lp-attr-row-conf {
+      font-family: var(--ct-font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ct-fg-3);
+      background: rgba(15, 76, 117, 0.06);
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    .lp-attr-row.visible .lp-attr-row-conf {
+      color: var(--ct-petroleum-900);
+      background: rgba(15, 76, 117, 0.1);
+    }
+
+    @media (max-width: 720px) {
+      .lp-attr-stage { padding: 18px; }
+      .lp-attr-field { grid-template-columns: 1fr; gap: 4px; }
+      .lp-attr-pipe { padding: 0 8px; gap: 8px; }
+      .lp-attr-pipe-node { padding: 8px 12px; font-size: 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .lp-attr-flow *,
+      .lp-attr-flow *::before,
+      .lp-attr-flow *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    /* ==========================================================
+       FIM DO CSS DO COMPONENTE
+</style>
+
+<!-- INÍCIO DO HTML DO COMPONENTE -->
+    <div class="lp-attr-flow" data-lp-attr-flow>
+      <div class="lp-attr-stage">
+        <div class="lp-attr-stage-head">
+          <span class="lp-attr-step">01</span>
+          <div>
+            <p class="lp-attr-stage-title">Você informa</p>
+            <p class="lp-attr-stage-sub">3 campos. Nada além disso.</p>
           </div>
-          <div class="glass-foot"><span class="tag">SAP</span><span class="tag">TOTVS</span><span class="tag">Oracle</span><span class="tag">OSGT</span></div>
+        </div>
+
+        <div class="lp-attr-input">
+          <div class="lp-attr-field">
+            <span class="lab">NCM</span>
+            <span class="val mono">5407.61.00</span>
+          </div>
+          <div class="lp-attr-field">
+            <span class="lab">Denominação</span>
+            <span class="val">Tecido poliéster azul marinho</span>
+          </div>
+          <div class="lp-attr-field">
+            <span class="lab">Descrição</span>
+            <span class="val">Tecido 100% poliéster, 180g/m², liso, cor azul marinho, largura 1,50m</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lp-attr-pipe" data-role="pipe">
+        <div class="lp-attr-pipe-line"></div>
+        <div class="lp-attr-pipe-node">
+          <i aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M13 2 3 14h8l-1 8 11-13h-8z"/></svg>
+          </i>
+          <span data-role="node-label" aria-live="polite">IA pronta</span>
+        </div>
+        <div class="lp-attr-pipe-line"></div>
+      </div>
+
+      <div class="lp-attr-stage lp-attr-output">
+        <div class="lp-attr-stage-head">
+          <span class="lp-attr-step">02</span>
+          <div>
+            <p class="lp-attr-stage-title">A IA preenche e valida</p>
+            <p class="lp-attr-stage-sub">Atributos exigidos pelo Siscomex · você só revisa.</p>
+          </div>
+        </div>
+
+        <div class="lp-attr-output-list" data-role="rows">
+          <div class="lp-attr-row" data-i="0">
+            <div class="lp-attr-row-check"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></div>
+            <div class="lp-attr-row-body"><span class="k">Tipo de tecido</span><span class="v">Tecido plano</span></div>
+            <span class="lp-attr-row-conf">98%</span>
+          </div>
+          <div class="lp-attr-row" data-i="1">
+            <div class="lp-attr-row-check"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></div>
+            <div class="lp-attr-row-body"><span class="k">Composição</span><span class="v">100% poliéster</span></div>
+            <span class="lp-attr-row-conf">96%</span>
+          </div>
+          <div class="lp-attr-row" data-i="2">
+            <div class="lp-attr-row-check"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></div>
+            <div class="lp-attr-row-body"><span class="k">Gramatura</span><span class="v">180 g/m²</span></div>
+            <span class="lp-attr-row-conf">94%</span>
+          </div>
+          <div class="lp-attr-row" data-i="3">
+            <div class="lp-attr-row-check"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></div>
+            <div class="lp-attr-row-body"><span class="k">Cor predominante</span><span class="v">Azul marinho</span></div>
+            <span class="lp-attr-row-conf">99%</span>
+          </div>
+          <div class="lp-attr-row" data-i="4">
+            <div class="lp-attr-row-check"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></div>
+            <div class="lp-attr-row-body"><span class="k">Largura</span><span class="v">1,50 m</span></div>
+            <span class="lp-attr-row-conf">92%</span>
+          </div>
+          <div class="lp-attr-row" data-i="5">
+            <div class="lp-attr-row-check"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></div>
+            <div class="lp-attr-row-body"><span class="k">Acabamento</span><span class="v">Liso · sem estampa</span></div>
+            <span class="lp-attr-row-conf">95%</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- FIM DO HTML DO COMPONENTE -->
+
+<!-- INÍCIO DO JAVASCRIPT DO COMPONENTE -->
+  <script>
+    (() => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      document.querySelectorAll("[data-lp-attr-flow]").forEach((root) => {
+        const pipe = root.querySelector('[data-role="pipe"]');
+        const label = root.querySelector('[data-role="node-label"]');
+        const rows = root.querySelectorAll('[data-role="rows"] .lp-attr-row');
+        let step = reduceMotion ? 7 : 0;
+
+        const render = () => {
+          const aiActive = step >= 2 && step <= 6;
+          const aiDone = step >= 7;
+          const visibleRows = Math.max(0, Math.min(step - 1, rows.length));
+
+          pipe.classList.toggle("active", aiActive);
+          pipe.classList.toggle("done", aiDone);
+          label.textContent = aiDone
+            ? `IA validou ${rows.length} atributos`
+            : aiActive
+              ? "IA processando…"
+              : "IA pronta";
+
+          rows.forEach((row, index) => {
+            row.classList.toggle("visible", index < visibleRows);
+          });
+        };
+
+        render();
+
+        if (!reduceMotion) {
+          window.setInterval(() => {
+            step = (step + 1) % 8;
+            render();
+          }, 1100);
+        }
+      });
+    })();
+  </script>
+  <!-- FIM DO JAVASCRIPT DO COMPONENTE -->
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-2bec493b commex-section commex-testimonials e-con-full e-flex e-con e-parent" data-id="2bec493b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5570b533 e-flex e-con-boxed e-con e-child" data-id="5570b533" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8239b0f elementor-widget elementor-widget-heading" data-id="8239b0f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Resultados comprovados por<br>quem está <span style="color:#FF5905">na linha de frente</span></h2>				</div>
+				<div class="elementor-element elementor-element-30269e17 elementor-widget elementor-widget-text-editor" data-id="30269e17" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Veja como nossos clientes reduziram retrabalho, ganharam eficiência operacional e fortaleceram a governança das suas operações de comércio exterior.								</div>
+				<div class="elementor-element elementor-element-c3ec7cf elementor-widget elementor-widget-dct_testimonials_slider" data-id="c3ec7cf" data-element_type="widget" data-e-type="widget" data-widget_type="dct_testimonials_slider.default">
+				<div class="elementor-widget-container">
+							<div id="dct-testimonials-slider-c3ec7cf" class="dct-testimonials-slider dct-testimonials-slider--has-arrows" role="region" aria-roledescription="carrossel" aria-label="Depoimentos de clientes" tabindex="0" data-autoplay="yes" data-interval="6000" data-pause-hover="yes" data-loop="yes" data-status-template="Depoimento %1$d de %2$d" >
+			<div class="dct-testimonials-slider__viewport" id="dct-testimonials-slider-c3ec7cf-viewport">
+				<div class="dct-testimonials-slider__track">
+																	<article
+							class="dct-testimonials-slider__slide is-active"
+							role="group"
+							aria-roledescription="slide"
+							aria-label="1 de 3"
+							aria-hidden="false"
+						>
+															<div class="dct-testimonials-slider__quote">
+									<p>Antes, o cadastro exigia diversas conferências manuais e acompanhamento em várias planilhas. Hoje centralizamos as informações, acompanhamos o status dos processos e reduzimos muito o tempo de cada cadastro.</p>
+								</div>
+							
+															<div class="dct-testimonials-slider__identity">
+																			<div class="dct-testimonials-slider__logo">
+											<img loading="lazy" decoding="async" width="144" height="31" src="assets/img/xcmg.png" class="dct-testimonials-slider__logo-image" alt="Imagem de Equipe XCMG Brasil" loading="lazy" />										</div>
+									
+																			<div class="dct-testimonials-slider__person">
+																							<div class="dct-testimonials-slider__name">Equipe XCMG Brasil</div>
+																																		<div class="dct-testimonials-slider__role"><p>Usuários da ferramenta no dia a dia</p>
 </div>
-
-<!-- CLIENTES -->
-<section class="tight">
-  <div class="container">
-    <div class="logo-strip reveal">
-      <span class="lbl">Empresas que usam a plataforma:</span>
-      <span class="client">XCMG BRASIL</span>
-      <span class="client">WINNER CARGO</span>
-    </div>
-  </div>
-</section>
-
-<!-- O PROBLEMA -->
-<section class="band-mist">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">O problema</span>
-      <h2>Operação de comex em escala não se governa em <span class="accent">planilha.</span></h2>
-      <p>Quando o catálogo cresce, cada etapa vira um ponto de erro e de retrabalho. Boa parte desse custo não aparece em relatório nenhum.</p>
-    </div>
-    <div class="grid cols-4">
-      <div class="card reveal">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3>O catálogo cresce mais rápido que o time</h3>
-        <p>Cada produto novo exige classificação e atributos antes de entrar no Portal Único. A fila anda no ritmo de quem sabe fazer.</p>
-      </div>
-      <div class="card reveal d1">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></svg></div>
-        <h3>Cada exigência trava o despacho</h3>
-        <p>NCM errada, atributo faltando no cadastro ou licença fora do prazo: qualquer pendência retém a carga no canal e gera multa.</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></div>
-        <h3>Conhecimento em planilha e na memória</h3>
-        <p>O critério e o histórico moram numa pessoa e em arquivos paralelos que divergem. Quem sai leva junto o que sabia.</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3a9 9 0 1 0 9 9"/><path d="M21 3v6h-6"/></svg></div>
-        <h3>Sem rastro, a fiscalização vira risco</h3>
-        <p>Sem registro de quem decidiu cada NCM e com qual base legal, auditoria interna e Receita passam a ser exposição, não rotina.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- A PLATAFORMA -->
-<section>
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">A plataforma</span>
-      <h2>Do catálogo no seu ERP até o <span class="accent">Portal Único.</span></h2>
-      <p>A base da plataforma é o Cadastro de Produtos: cadastro em massa, com IA e trilha de auditoria. Classificação Fiscal NCM, Integrações ERP, DUIMP, LPCO, DU-E e NFe entram como módulos adicionais, contratados à parte conforme a operação precisa.</p>
-    </div>
-    <div class="bento">
-      <a class="card feat reveal" href="cadastro-de-produtos.html">
-        <span class="eyebrow">Base da plataforma</span>
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v9"/></svg></div>
-        <h3>Cadastro de Produtos</h3>
-        <p>O catálogo que sustenta toda a operação: cadastro de produtos em massa, atributos do Portal Único validados antes do envio e trilha de auditoria por SKU. Os outros seis módulos se somam a essa base.</p>
-        <span class="go">Conhecer a base →</span>
-      </a>
-      <a class="card reveal d1" href="ncm.html">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7l9 9-7 7-9-9V4z"/><circle cx="8.5" cy="8.5" r="1.5"/></svg></div>
-        <h3>Classificação Fiscal NCM</h3>
-        <p>Um agente especializado sugere a NCM com score de confiança e base legal. De 3–4 horas para 5 minutos por produto.</p>
-        <span class="go">Conhecer o módulo →</span>
-      </a>
-      <a class="card reveal" href="duimp.html">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
-        <h3>DUIMP</h3>
-        <p>Na DUIMP, um atributo obrigatório em aberto trava o registro. O módulo mede quanto do seu catálogo já atende às exigências e organiza o preenchimento do que falta.</p>
-        <span class="go">Conhecer o módulo →</span>
-      </a>
-      <a class="card reveal d1" href="lpco.html">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3>LPCO</h3>
-        <p>Licenças e anuências acompanhadas dentro do fluxo, com o prazo de cada órgão anuente visível para o time inteiro.</p>
-        <span class="go">Conhecer o módulo →</span>
-      </a>
-      <a class="card reveal d2" href="du-e.html">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 16 16 8"/><path d="M10 8h6v6"/></svg></div>
-        <h3>DU-E</h3>
-        <p>Dados do ERP direto para a DU-E, com o histórico de cada envio registrado.</p>
-        <span class="go">Conhecer o módulo →</span>
-      </a>
-      <a class="card reveal d1" href="nfe.html">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2z"/><path d="M9.5 7.5h5M9.5 11.5h5"/></svg></div>
-        <h3>NFe</h3>
-        <p>Integração fiscal alinhada à operação de comex. Os dados da nota ficam consistentes com o que foi declarado, sem divergência entre sistemas.</p>
-        <span class="go">Conhecer o módulo →</span>
-      </a>
-      <a class="card reveal d2" href="integracoes.html">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6"/><path d="M8 7H6a5 5 0 0 0 0 10h2"/><path d="M16 7h2a5 5 0 0 1 0 10h-2"/></svg></div>
-        <h3>Integrações ERP</h3>
-        <p>SAP, TOTVS, Oracle, OSGT e sistemas próprios conectados por API REST ou SFTP, com OAuth e ambiente multi-tenant isolado.</p>
-        <span class="go">Conhecer o módulo →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="band-dark on-dark">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Como funciona</span>
-      <h2>Do catálogo à declaração, num fluxo só</h2>
-      <p>A plataforma trabalha sobre o catálogo que você já tem, direto no navegador ou puxado do ERP. Ninguém troca de sistema nem redigita produto.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="n">PASSO 01</div>
-        <h3>Centralize o catálogo</h3>
-        <p>Cadastro de produtos em massa na plataforma, direto ou integrado ao ERP (SAP, TOTVS, Oracle, OSGT). O catálogo passa a ter uma versão única e auditável.</p>
-      </div>
-      <div class="step reveal d1">
-        <div class="n">PASSO 02</div>
-        <h3>Classifique e complete</h3>
-        <p>O agente especializado sugere a NCM com score de confiança e base legal, e a plataforma monta e valida os atributos que o Portal Único exige.</p>
-      </div>
-      <div class="step reveal d2">
-        <div class="n">PASSO 03</div>
-        <h3>Declare com rastro</h3>
-        <p>Seu time revisa só o que o score aponta e envia ao Portal Único. Cada decisão fica registrada com autor, data e base legal.</p>
-      </div>
-    </div>
-    <div class="flow reveal d2">
-      <span class="f">Catálogo</span><span class="a">→</span>
-      <span class="f hl">Classificação (agente)</span><span class="a">→</span>
-      <span class="f">Atributos</span><span class="a">→</span>
-      <span class="f">Validação</span><span class="a">→</span>
-      <span class="f">Portal Único</span><span class="a">→</span>
-      <span class="f hl">Trilha auditável</span>
-    </div>
-  </div>
-</section>
-
-<!-- POR DENTRO DA PLATAFORMA -->
-<section class="band-mist">
-  <div class="container">
-    <div class="sec-head center reveal">
-      <span class="eyebrow">Por dentro da plataforma</span>
-      <h2>As telas que o seu time usa todo <span class="accent">dia.</span></h2>
-      <p>São imagens de telas em produção, não mockups: o cadastro de produtos e a fila de classificação, como o seu time vê no dia a dia.</p>
-    </div>
-    <div class="grid cols-2">
-      <div>
-        <figure class="shot reveal d1">
-          <img src="assets/img/plataforma-cadastro-produto.png" alt="Tela de Descrição do Produto na plataforma Commex Tech, com os atributos exigidos pela NCM preenchidos e validados" loading="lazy">
-        </figure>
-        <p class="shot-cap reveal d1">Cadastro de Produtos: os atributos exigidos pela NCM, preenchidos e validados.</p>
-      </div>
-      <div>
-        <figure class="shot crop-top reveal d2">
-          <img src="assets/img/plataforma-classificacao-lista.png" alt="Fila de classificação NCM na plataforma Commex Tech, com NCM sugerida e nível de confiança por item" loading="lazy">
-        </figure>
-        <p class="shot-cap reveal d2">Classificação Fiscal NCM: sugestão do agente e confiança item a item.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- NÚMEROS -->
-<section>
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Números</span>
-      <h2>Os números da plataforma</h2>
-      <p>Todos os quatro saíram de operação em produção.</p>
-    </div>
-    <div class="stats">
-      <div class="stat reveal"><b>100 mil</b><span>produtos classificados para a XCMG Brasil</span></div>
-      <div class="stat reveal d1"><b>4h → 5min</b><span>por produto: de horas de analista sênior para minutos de revisão</span></div>
-      <div class="stat reveal d2"><b>8h–18h</b><span>suporte direto em dias úteis, com treinamento inicial incluso</span></div>
-      <div class="stat reveal d3"><b>99,9%</b><span>de disponibilidade real medida, acima do SLA contratual de 99,5%</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- DIFERENCIAIS -->
-<section class="band-mist">
-  <div class="container">
-    <div class="split">
-      <div class="reveal">
-        <span class="eyebrow">Diferenciais</span>
-        <h2 style="font-size:clamp(28px,4vw,42px);margin-bottom:18px">Por que uma plataforma, e não mais uma <span class="accent">ferramenta.</span></h2>
-        <p>Ferramenta isolada resolve uma etapa e cria mais uma planilha para conciliar. A Commex Tech cobre o caminho do catálogo à declaração e registra cada decisão para responder à fiscalização.</p>
-        <ul class="checklist">
-          <li>Um fluxo só, do catálogo ao Portal Único, em vez de uma ferramenta por etapa</li>
-          <li>Agente especializado de NCM, treinado em milhões de classificações (não um lookup de tabela)</li>
-          <li>Integração nativa com o ERP que já roda na sua empresa</li>
-          <li>Rastreabilidade auditável por SKU: autor, data e base legal de cada decisão</li>
-          <li>Suporte próximo, em dias úteis, com treinamento inicial incluso</li>
-        </ul>
-      </div>
-      <div class="card hover reveal d1">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg></div>
-        <h3>Exemplo de registro de um SKU</h3>
-        <p style="margin-top:6px"><b>Produto:</b> Bomba hidráulica de engrenagens</p>
-        <p style="margin-top:8px"><b>NCM aplicada:</b> 8413.60.11 · score de confiança alto</p>
-        <p style="margin-top:8px"><b>Quem classificou:</b> o agente, com validação do analista responsável</p>
-        <p style="margin-top:8px"><b>Quando:</b> data e hora registradas no audit log</p>
-        <p style="margin-top:8px"><b>Base legal:</b> TIPI vigente e entendimento da Receita na data da decisão</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DEPOIMENTO -->
-<section>
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Depoimento</span>
-      <h2>O que a XCMG Brasil diz da <span class="accent">parceria.</span></h2>
-    </div>
-    <div class="case reveal d1">
-      <div class="mark">“</div>
-      <blockquote>
-        <p>Com a solução implementada pela Commex Tech, passamos a contar com um fluxo mais organizado, padronizado e eficiente (…) A centralização das informações em uma única plataforma trouxe ganhos significativos em controle, rastreabilidade e confiabilidade dos dados, reduzindo retrabalhos e facilitando o gerenciamento das atividades do dia a dia.</p>
-      </blockquote>
-      <div class="who"><b>XCMG Brasil</b>Depoimento institucional sobre a solução de cadastro de produtos com integrações SAP e OSGT</div>
-    </div>
-    <p class="shot-cap reveal d2"><a href="solucoes.html#case-xcmg">Ler o depoimento completo →</a></p>
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<div class="cta-band">
-  <div class="container">
-    <span class="eyebrow">Próximo passo</span>
-    <h2>Comece por um diagnóstico da sua operação</h2>
-    <p>Fale com um especialista e mostre como o comex roda hoje. Se quiser, envie uma amostra do catálogo: em uma conversa dá para ver onde a operação está exposta, da classificação à declaração.</p>
-    <a class="btn btn-primary" href="contato.html">Falar com um especialista <span class="arr">→</span></a>
-    <div class="note">Atendimento em dias úteis, das 8h às 18h.</div>
-  </div>
+																					</div>
+																	</div>
+													</article>
+																	<article
+							class="dct-testimonials-slider__slide"
+							role="group"
+							aria-roledescription="slide"
+							aria-label="2 de 3"
+							aria-hidden="true"
+						>
+															<div class="dct-testimonials-slider__quote">
+									<p>Cadastramos 3 mil produtos no Siscomex em 1 dia para vários clientes. A notificação automática quando um atributo muda e desativa o item é o que faz a diferença — em poucos cliques reativamos novas versões em massa, sem precisar revisar SKU por SKU.</p>
+								</div>
+							
+															<div class="dct-testimonials-slider__identity">
+																			<div class="dct-testimonials-slider__logo">
+											<img loading="lazy" decoding="async" width="2048" height="669" src="assets/img/Winner-Cargo-1.png" class="dct-testimonials-slider__logo-image" alt="Imagem de Valmir Taccani" loading="lazy" />										</div>
+									
+																			<div class="dct-testimonials-slider__person">
+																							<div class="dct-testimonials-slider__name">Valmir Taccani</div>
+																																		<div class="dct-testimonials-slider__role"><p>Gerente de Comex · Winner Cargo</p>
 </div>
+																					</div>
+																	</div>
+													</article>
+																	<article
+							class="dct-testimonials-slider__slide"
+							role="group"
+							aria-roledescription="slide"
+							aria-label="3 de 3"
+							aria-hidden="true"
+						>
+															<div class="dct-testimonials-slider__quote">
+									<p>Com a solução implementada pela Commex Tech, passamos a contar com um fluxo mais organizado, padronizado e eficiente (…) A centralização das informações em uma única plataforma trouxe ganhos significativos em controle, rastreabilidade e confiabilidade dos dados, reduzindo retrabalhos e facilitando o gerenciamento das atividades do dia a dia.</p>
+								</div>
+							
+															<div class="dct-testimonials-slider__identity">
+																			<div class="dct-testimonials-slider__logo">
+											<img loading="lazy" decoding="async" width="144" height="31" src="assets/img/xcmg.png" class="dct-testimonials-slider__logo-image" alt="Imagem de XCMG Brasil" loading="lazy" />										</div>
+									
+																			<div class="dct-testimonials-slider__person">
+																							<div class="dct-testimonials-slider__name">XCMG Brasil</div>
+																																		<div class="dct-testimonials-slider__role"><p>Depoimento institucional sobre a solução de cadastro de produtos com integrações SAP e OSGT</p>
+</div>
+																					</div>
+																	</div>
+													</article>
+									</div>
+			</div>
 
-</main>
+							<button class="dct-testimonials-slider__arrow dct-testimonials-slider__arrow--previous" type="button" aria-label="Depoimento anterior" aria-controls="dct-testimonials-slider-c3ec7cf-viewport">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5 8 12l7 7" /></svg>
+				</button>
+				<button class="dct-testimonials-slider__arrow dct-testimonials-slider__arrow--next" type="button" aria-label="Próximo depoimento" aria-controls="dct-testimonials-slider-c3ec7cf-viewport">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7" /></svg>
+				</button>
+			
+			
+			<p class="dct-testimonials-slider__status dct-screen-reader-text" aria-live="polite" aria-atomic="true"></p>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-43a0dab3 commex-section commex-results commex-bg-substituir e-con-full e-flex e-con e-parent" data-id="43a0dab3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-b4967ec commex-results-grid e-grid e-con-full e-con e-child" data-id="b4967ec" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-74e902fb commex-result-item e-flex e-con-boxed e-con e-child" data-id="74e902fb" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-197931d0 elementor-widget elementor-widget-heading" data-id="197931d0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">100 mil</h3>				</div>
+				<div class="elementor-element elementor-element-2bea9042 elementor-widget elementor-widget-text-editor" data-id="2bea9042" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									produtos classificados para a XCMG Brasil								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1a71c3eb commex-result-item e-flex e-con-boxed e-con e-child" data-id="1a71c3eb" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4cbb7d7a elementor-widget elementor-widget-heading" data-id="4cbb7d7a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">de 4h para 5min</h3>				</div>
+				<div class="elementor-element elementor-element-7ca898e1 elementor-widget elementor-widget-text-editor" data-id="7ca898e1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									por produto: de horas de analista sênior para minutos de revisão								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5414bd0a commex-result-item e-flex e-con-boxed e-con e-child" data-id="5414bd0a" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7cc02fc2 elementor-widget elementor-widget-heading" data-id="7cc02fc2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">8h–18h</h3>				</div>
+				<div class="elementor-element elementor-element-5c2dee81 elementor-widget elementor-widget-text-editor" data-id="5c2dee81" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									suporte direto em dias úteis, com treinamento inicial incluso								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-30877cf6 commex-result-item e-flex e-con-boxed e-con e-child" data-id="30877cf6" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-557a4c0b elementor-widget elementor-widget-heading" data-id="557a4c0b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">99,9%</h3>				</div>
+				<div class="elementor-element elementor-element-929403c elementor-widget elementor-widget-text-editor" data-id="929403c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									de disponibilidade real medida, acima do SLA contratual de 99,5%								</div>
+					</div>
+				</div>
+				</div>
+				</section>
+		<section class="elementor-element elementor-element-6843ab70 commex-section commex-diagnostic e-con-full e-flex e-con e-parent" data-id="6843ab70" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-4c4e7bfa e-flex e-con-boxed e-con e-child" data-id="4c4e7bfa" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6064cd15 e-flex e-con-boxed e-con e-child" data-id="6064cd15" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2e8324bb elementor-widget elementor-widget-heading" data-id="2e8324bb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Comece por um<br>diagnóstico <span style="color:#FE4B0B">da<br>sua operação</span></h2>				</div>
+				<div class="elementor-element elementor-element-2e8d16bd elementor-widget elementor-widget-text-editor" data-id="2e8d16bd" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Fale com um especialista e mostre como o comex roda hoje. Se quiser, envie uma amostra do catálogo: em uma conversa dá para ver onde a operação está exposta, da classificação à declaração.								</div>
+				<div class="elementor-element elementor-element-45e17810 elementor-widget elementor-widget-button" data-id="45e17810" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Falar com um especialista</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-62989f3e e-flex e-con-boxed e-con e-child" data-id="62989f3e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1fd66af6 elementor-widget elementor-widget-image" data-id="1fd66af6" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="515" height="717" src="assets/img/fale-com-a-commex.png" class="attachment-full size-full wp-image-27" alt="" srcset="assets/img/fale-com-a-commex.png 515w, assets/img/fale-com-a-commex-215x300.png 215w" sizes="(max-width: 515px) 100vw, 515px" />															</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</section>
+				</div>
+				<footer data-elementor-type="footer" data-elementor-id="288" class="elementor elementor-288 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<footer class="elementor-element elementor-element-565a1e63 e-flex e-con-boxed e-con e-parent" data-id="565a1e63" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-78f07b8f e-con-full e-flex e-con e-child" data-id="78f07b8f" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-57d0e4f7 e-con-full e-flex e-con e-child" data-id="57d0e4f7" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-7eef359e e-con-full e-flex e-con e-child" data-id="7eef359e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-50344b85 elementor-widget elementor-widget-image" data-id="50344b85" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img width="394" height="44" src="assets/img/commex-tech.svg" class="attachment-full size-full wp-image-282" alt="" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-34d3bdab e-con-full e-flex e-con e-child" data-id="34d3bdab" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4fda239a elementor-widget elementor-widget-heading" data-id="4fda239a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h6 class="elementor-heading-title elementor-size-default">Soluções</h6>				</div>
+				<div class="elementor-element elementor-element-8d0633e elementor-nav-menu__text-align-center elementor-nav-menu__align-start elementor-nav-menu--dropdown-tablet elementor-widget elementor-widget-nav-menu" data-id="8d0633e" data-element_type="widget" data-e-type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg aria-hidden=\&quot;true\&quot; class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-text e--animation-none">
+				<ul id="menu-1-8d0633e" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><a href="cadastro-de-produtos.html" class="elementor-item">Catálogo de produtos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="ncm.html" class="elementor-item">Classificador de NCM</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-359"><a href="duimp.html" class="elementor-item">DUIMP</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="du-e.html" class="elementor-item">DU-E</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="integracoes.html" class="elementor-item">Integração ERP</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="lpco.html" class="elementor-item">LPCO</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="nfe.html" class="elementor-item">NFe</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-8d0633e" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><a href="cadastro-de-produtos.html" class="elementor-item" tabindex="-1">Catálogo de produtos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="ncm.html" class="elementor-item" tabindex="-1">Classificador de NCM</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-359"><a href="duimp.html" class="elementor-item" tabindex="-1">DUIMP</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="du-e.html" class="elementor-item" tabindex="-1">DU-E</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="integracoes.html" class="elementor-item" tabindex="-1">Integração ERP</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="lpco.html" class="elementor-item" tabindex="-1">LPCO</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="nfe.html" class="elementor-item" tabindex="-1">NFe</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-728cabd0 e-con-full e-flex e-con e-child" data-id="728cabd0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-78442686 elementor-widget elementor-widget-heading" data-id="78442686" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h6 class="elementor-heading-title elementor-size-default">Empresa</h6>				</div>
+				<div class="elementor-element elementor-element-471f9bfe elementor-widget elementor-widget-heading" data-id="471f9bfe" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="sobre.html">Sobre nós</a></div>				</div>
+				<div class="elementor-element elementor-element-528154ff elementor-widget elementor-widget-heading" data-id="528154ff" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="contato.html">Contato</a></div>				</div>
+				</div>
+		<div class="elementor-element elementor-element-2d93bee8 e-con-full e-flex e-con e-child" data-id="2d93bee8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-44394542 elementor-widget elementor-widget-heading" data-id="44394542" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h6 class="elementor-heading-title elementor-size-default">Contato</h6>				</div>
+				<div class="elementor-element elementor-element-e1d10bb elementor-widget elementor-widget-heading" data-id="e1d10bb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="https://www.linkedin.com/company/commex-tech/" target="_blank">LinkedIn</a></div>				</div>
+				<div class="elementor-element elementor-element-36bc2323 elementor-widget elementor-widget-heading" data-id="36bc2323" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="https://www.instagram.com/commex.tech" target="_blank">Instagram</a></div>				</div>
+				<div class="elementor-element elementor-element-60407baa elementor-widget elementor-widget-heading" data-id="60407baa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">WhatsApp</a></div>				</div>
+				<div class="elementor-element elementor-element-2a4ebaad elementor-widget elementor-widget-heading" data-id="2a4ebaad" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="mailto:comercial@commextech.com">comercial@commextech.com</a></div>				</div>
+				<div class="elementor-element elementor-element-42c54e8b elementor-widget elementor-widget-heading" data-id="42c54e8b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">Joinville/SC · dias úteis, 8h–18h</div>				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-14e7bfe elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="14e7bfe" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+		<div class="elementor-element elementor-element-614bd58b e-con-full e-flex e-con e-child" data-id="614bd58b" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-26f4494a e-con-full e-flex e-con e-child" data-id="26f4494a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2c635627 elementor-widget elementor-widget-heading" data-id="2c635627" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">Commex Tech Consultoria em Tecnologia da Informação LTDA · CNPJ 62.035.177/0001-80 · Joinville/SC</div>				</div>
+				</div>
+		<div class="elementor-element elementor-element-45c1fdcd e-con-full e-flex e-con e-child" data-id="45c1fdcd" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-146053d1 e-con-full e-flex e-con e-child" data-id="146053d1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1d56fc77 elementor-widget elementor-widget-heading" data-id="1d56fc77" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="#politica-de-privacidade">Política de Privacidade</a></div>				</div>
+				<div class="elementor-element elementor-element-6ab6dd67 elementor-widget elementor-widget-heading" data-id="6ab6dd67" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">· © 2026 Commex Tech</div>				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</footer>
+				</footer>
+		
+<div>
+			</div>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <a class="brand" href="index.html">commex<span>tech</span></a>
-        <p>Automação com IA e rastreabilidade auditável para operações de comércio exterior em escala.</p>
-      </div>
-      <div>
-        <h4>Soluções</h4>
-        <a href="ncm.html">Classificação Fiscal NCM</a>
-        <a href="cadastro-de-produtos.html">Cadastro de Produtos</a>
-        <a href="duimp.html">DUIMP</a>
-        <a href="lpco.html">LPCO</a>
-        <a href="du-e.html">DU-E</a>
-        <a href="nfe.html">NFe</a>
-        <a href="integracoes.html">Integrações ERP</a>
-      </div>
-      <div>
-        <h4>Empresa</h4>
-        <a href="sobre.html">Sobre nós</a>
-        <a href="solucoes.html">Soluções</a>
-        <a href="contato.html">Contato</a>
-      </div>
-      <div>
-        <h4>Contato</h4>
-        <a href="https://linkedin.com/company/commex-tech/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://instagram.com/commex.tech" target="_blank" rel="noopener">Instagram</a>
-        <a href="#">WhatsApp</a>
-        <a href="#">[e-mail a definir]</a>
-        <span style="font-size:14px;display:block;padding:5px 0">Joinville/SC · dias úteis, 8h–18h</span>
-      </div>
-    </div>
-    <div class="legal">
-      <span>Commex Tech Consultoria em Tecnologia da Informação LTDA · CNPJ 62.035.177/0001-80 · Joinville/SC</span>
-      <span><a href="#">Política de Privacidade</a> · © <span data-year>2026</span> Commex Tech</span>
-    </div>
-  </div>
-</footer>
-
-<a class="wa" href="#" title="Chamar no WhatsApp" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.7.9 3.6 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.9c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9.9.9-4.7-.2-.4c-1-1.6-1.5-3.4-1.5-5.1 0-5.5 4.5-10 10-10s10 4.5 10 10-4.2 10.9-8.7 10.9zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.6 5.6 5 .8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg></a>
-
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="hello-theme-frontend-js" src="assets/js/hello-frontend.js"></script>
+<script id="elementor-webpack-runtime-js" src="assets/js/elementor-webpack.runtime.min.js"></script>
+<script id="elementor-frontend-modules-js" src="assets/js/elementor-frontend-modules.min.js"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="assets/js/core.min.js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnX":"Compartilhar no X","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},
+"hasCustomBreakpoints":false},"version":"4.2.3","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"","ajaxurl":"","uploadUrl":""},"nonces":{"floatingButtonsClickTracking":"9be9ec6f00","atomicFormsSendForm":"cff7a3e78a"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":13,"title":"Commex%20Tech","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="assets/js/elementor-frontend.min.js"></script>
+<script id="smartmenus-js" src="assets/js/jquery.smartmenus.min.js"></script>
+<script id="e-sticky-js" src="assets/js/jquery.sticky.min.js"></script>
+<script id="dct-testimonials-slider-js" src="assets/js/testimonials-slider.js"></script>
+<script id="elementor-pro-webpack-runtime-js" src="assets/js/pro-webpack-pro.runtime.min.js"></script>
+<script id="wp-hooks-js" src="assets/js/hooks.min.js"></script>
+<script id="wp-i18n-js" src="assets/js/i18n.min.js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"","nonce":"8bcf61a3a4","urls":{"assets":"","rest":""},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},
+"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":""}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script id="elementor-pro-frontend-js" src="assets/js/pro-frontend.min.js"></script>
+<script id="pro-elements-handlers-js" src="assets/js/pro-elements-handlers.min.js"></script>
+			<script data-category="functional">
+											</script>
+			
+<a class="commex-wa" href="https://wa.me/5547999744290?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Commex%20Tech%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.516 3.516c4.686-4.686 12.284-4.686 16.97 0s4.686 12.283 0 16.97a12 12 0 0 1-13.754 2.299l-5.814.735a.392.392 0 0 1-.438-.44l.748-5.788A12 12 0 0 1 3.517 3.517zm3.61 17.043.3.158a9.85 9.85 0 0 0 11.534-1.758c3.843-3.843 3.843-10.074 0-13.918s-10.075-3.843-13.918 0a9.85 9.85 0 0 0-1.747 11.554l.16.303-.51 3.942a.196.196 0 0 0 .219.22zm6.534-7.003-.933 1.164a9.84 9.84 0 0 1-3.497-3.495l1.166-.933a.79.79 0 0 0 .23-.94L9.561 6.96a.79.79 0 0 0-.924-.445l-2.023.524a.797.797 0 0 0-.588.88 11.754 11.754 0 0 0 10.005 10.005.797.797 0 0 0 .88-.587l.525-2.023a.79.79 0 0 0-.445-.923L14.6 13.327a.79.79 0 0 0-.94.23z"/></svg></a>
+<link rel="stylesheet" href="assets/css/commex-static.css">
 </body>
 </html>
+
+<!--Generated by Endurance Page Cache-->

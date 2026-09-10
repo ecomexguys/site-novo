@@ -1,0 +1,18 @@
+/* Ajustes da versão estática do site (fora do Elementor). */
+
+/* Botão flutuante de WhatsApp — substitui o widget Joinchat do WordPress. */
+.commex-wa{
+  position:fixed;right:20px;bottom:20px;z-index:9000;
+  width:56px;height:56px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:#25d366;color:#fff;
+  box-shadow:0 4px 16px rgba(0,0,0,.25);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.commex-wa:hover{transform:scale(1.06);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.commex-wa:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.commex-wa svg{width:32px;height:32px;display:block}
+@media (max-width:767px){
+  .commex-wa{right:16px;bottom:16px;width:52px;height:52px}
+  .commex-wa svg{width:29px;height:29px}
+}
